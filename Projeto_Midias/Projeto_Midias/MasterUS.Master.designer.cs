@@ -59,21 +59,21 @@ namespace Projeto_Midias {
         protected global::System.Web.UI.WebControls.Label lblTitle;
         
         /// <summary>
-        /// txtPesquisa control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPesquisa;
+        protected global::System.Web.UI.WebControls.Image Image1;
         
         /// <summary>
-        /// btnPesquisa control.
+        /// hlEditar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPesquisa;
+        protected global::System.Web.UI.WebControls.HyperLink hlEditar;
     }
 }

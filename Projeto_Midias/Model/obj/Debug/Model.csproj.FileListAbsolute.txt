@@ -13,3 +13,8 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Mode
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Model\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Model\obj\Debug\Model.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Model\obj\Debug\Model.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Model\bin\Debug\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Model\bin\Debug\Model.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Model\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Model\obj\Debug\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Model\obj\Debug\Model.pdb

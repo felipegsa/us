@@ -27,15 +27,15 @@
     <link href="css/inicio.css" rel="stylesheet" type="text/css" />
     <link href="css/login.css" rel="stylesheet" type="text/css" />
 
-    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 
-    <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
 
-    <script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
 
-    <script type="text/javascript" src="../js/adm/geral.js"></script>
+    <script type="text/javascript" src="js/adm/geral.js"></script>
 
-    <script type="text/javascript" src="../js/adm/inicio.js"></script>
+    <script type="text/javascript" src="js/adm/inicio.js"></script>
 
     <script src="../jQuery.js" type="text/javascript"></script>
 
@@ -57,11 +57,11 @@
         <!-- MENU PRINCIPAL -->
         <div class="menu_principal">
             <ul>
-                <li class="btn_menu_principal" onclick="changeTab('perfil');"><a href="#" title="Perfil">
+                <li class="btn_menu_principal" onclick="changeTab('perfil');"><a href="PerfilAluno.aspx" title="Perfil">
                     Perfil</a></li>
-                <li class="btn_menu_principal_precionado" onclick="changeTab('cursos');"><a href="#"
+                <li class="btn_menu_principal_precionado" onclick="changeTab('cursos');"><a href="Cursos.aspx"
                     title="Cursos">Cursos</a></li>
-                <li class="btn_menu_principal_precionado"><a href="#" title="Jogos">Jogos</a></li>
+                <li class="btn_menu_principal_precionado"><a href="Jogos.aspx" title="Jogos">Jogos</a></li>
                 <li class="btn_menu_sair" style="width: 44px; margin-right: 0;"><a href="#" title="Sair">
                     Sair</a></li>
             </ul>
@@ -87,26 +87,24 @@
                     <!-- FIM COLUNA 1 -->
                 
                 <!-- COLUNA 2 -->
-                <div class="coluna2">
+                <div class="coluna2" style="width:300px;">
                     <div class="caixa_especial">
                         <h2 class="titulo_secundario">
-                            Últimos Cursos Cadastrados:</h2>
+                            Aluno:</h2>
                         <!-- PRODUTO -->
                         <div class="ultimos_produtos">
                             <h3 class="titulo_terceiro">
-                                TESTE</h3>
-                            <div class="img" style="background-image: ; background-color: #fff; background-position: center center;
-                                background-repeat: no-repeat;">
-                            </div>
+                                FELIPE</h3>
+                            <asp:Image ID="Image1" runat="server"  CssClass="img" style="background-position: center center;"/>   
                             <p>
-                                <a href="#" title="Editar">Editar</a> | <a href="#" title="Visualizar" target="_blank">
-                                    Visualizar</a></p>
+                               <asp:HyperLink ID="hlEditar" runat="server" NavigateUrl="~/DadosAluno.aspx">Editar</asp:HyperLink>                              
+                            </p>
                         </div>
                         <!-- FIM PRODUTO -->
-                        <h2 class="titulo_secundario">Pesquisar Curso:</h2>
+                       <%-- <h2 class="titulo_secundario">Pesquisar Curso:</h2>
                         <div style="width:98%; float:left;">
                         <asp:TextBox ID="txtPesquisa" runat="server" CssClass="campos_formulario" Width="158px"></asp:TextBox>
-                        <asp:Button ID="btnPesquisa" runat="server" Text="Pesquisar"  CssClass="botao"  style="float:right;" />
+                        <asp:Button ID="btnPesquisa" runat="server" Text="Pesquisar"  CssClass="botao"  style="float:right;" />--%>
                         </div>
                         <span class="clear"></span>
                         

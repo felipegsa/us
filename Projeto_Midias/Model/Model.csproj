@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
     <Compile Include="Curso.cs" />
     <Compile Include="Enum\EAcaoCurso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -149,6 +149,13 @@
     <Compile Include="Cursos.aspx.designer.cs">
       <DependentUpon>Cursos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DadosAluno.aspx.cs">
+      <DependentUpon>DadosAluno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DadosAluno.aspx.designer.cs">
+      <DependentUpon>DadosAluno.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -188,6 +195,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cursos.aspx" />
+    <Content Include="DadosAluno.aspx" />
     <Content Include="Jogos.aspx" />
     <Content Include="MasterUS.Master" />
     <Content Include="PerfilAluno.aspx" />

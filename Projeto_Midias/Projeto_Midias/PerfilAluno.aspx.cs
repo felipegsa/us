@@ -17,38 +17,11 @@ namespace Projeto_Midias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            BLL.Aluno bllAluno = new BLL.Aluno();
-            var stream = new MemoryStream();
-            stream = bllAluno.GetImage(1);
-
             BLL.CursoBLL bllCurso = new BLL.CursoBLL();
             List<Model.Curso> meuCursos = new List<Model.Curso>();
 
             meuCursos = bllCurso.ConsultarCurso();
-            
-            Model.Curso objCurso;   
-   
-
-            List<Model.Curso> listObjCurso = new List<Model.Curso>();
-
-            for (int i = 0; i < 15; i++)
-            {
-                objCurso = new Model.Curso();
-                objCurso.Id = i;
-                objCurso.Nome = "nome" + i;
-                objCurso.Assunto = "Assunto" + i;
-                objCurso.Telefone = i;
-                objCurso.Data = DateTime.Now;
-                if (i < 3)
-                {
-                    objCurso.Acao = Model.Enum.EAcaoCurso.Concluido;
-                }
-                else
-                {
-                    objCurso.Acao = Model.Enum.EAcaoCurso.Fazer;
-                }
-                listObjCurso.Add(objCurso);
-            }
+           
             rptCursos.DataSource = meuCursos;
             rptCursos.DataBind();
         }

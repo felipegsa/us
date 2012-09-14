@@ -22,3 +22,10 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\DAL\
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\DAL\bin\Debug\Model.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\DAL\obj\Debug\DAL.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\DAL\obj\Debug\DAL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\DAL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\DAL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\Model.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\obj\Debug\DAL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\obj\Debug\DAL.pdb

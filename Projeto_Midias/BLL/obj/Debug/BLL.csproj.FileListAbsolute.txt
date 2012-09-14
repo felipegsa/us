@@ -26,3 +26,12 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\bin\Debug\DAL.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\obj\Debug\BLL.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\obj\Debug\BLL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\BLL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\BLL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\DAL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\Model.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\DAL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\obj\Debug\BLL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\obj\Debug\BLL.pdb
