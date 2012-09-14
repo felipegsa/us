@@ -1,0 +1,28 @@
+C:\Users\Leonardo\Documents\Visual Studio 2008\Projects\Projeto_Midias\BLL\bin\Debug\BLL.dll
+C:\Users\Leonardo\Documents\Visual Studio 2008\Projects\Projeto_Midias\BLL\bin\Debug\BLL.pdb
+C:\Users\Leonardo\Documents\Visual Studio 2008\Projects\Projeto_Midias\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Leonardo\Documents\Visual Studio 2008\Projects\Projeto_Midias\BLL\obj\Debug\BLL.dll
+C:\Users\Leonardo\Documents\Visual Studio 2008\Projects\Projeto_Midias\BLL\obj\Debug\BLL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Projeto_Midias\BLL\bin\Debug\BLL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Projeto_Midias\BLL\bin\Debug\BLL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Projeto_Midias\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Projeto_Midias\BLL\obj\Debug\BLL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\Projeto_Midias\BLL\obj\Debug\BLL.pdb
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\obj\Debug\BLL.dll
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\bin\Debug\BLL.dll
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\bin\Debug\BLL.pdb
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\bin\Debug\DAL.dll
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\bin\Debug\Model.dll
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\bin\Debug\Model.pdb
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\bin\Debug\DAL.pdb
+C:\Users\Leonardo\Desktop\Midias\Projeto_Midias\BLL\obj\Debug\BLL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\bin\Debug\BLL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\bin\Debug\BLL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\bin\Debug\DAL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\bin\Debug\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\bin\Debug\Model.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\bin\Debug\DAL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\obj\Debug\BLL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Projeto_Midias\BLL\obj\Debug\BLL.pdb

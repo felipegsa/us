@@ -1,0 +1,233 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22C06AE9-5107-4F9B-83DE-035F1E8E7927}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Projeto_Midias</RootNamespace>
+    <AssemblyName>Projeto_Midias</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\adm\estilobase.css" />
+    <Content Include="css\adm\inicio.css" />
+    <Content Include="css\adm\login.css" />
+    <Content Include="css\estilobase.css" />
+    <Content Include="css\inicio.css" />
+    <Content Include="css\jquery-ui-1.8.17.custom.css" />
+    <Content Include="css\jquery.fancybox.css" />
+    <Content Include="css\login.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="img\adm\icones-adm\box.png" />
+    <Content Include="img\adm\icones-adm\camera.png" />
+    <Content Include="img\adm\icones-adm\cancel.png" />
+    <Content Include="img\adm\icones-adm\delete.png" />
+    <Content Include="img\adm\icones-adm\export.png" />
+    <Content Include="img\adm\icones-adm\help.png" />
+    <Content Include="img\adm\icones-adm\legenda-status-pedidos.png" />
+    <Content Include="img\adm\icones-adm\ok.png" />
+    <Content Include="img\adm\icones-adm\photo.png" />
+    <Content Include="img\adm\icones-adm\plus.png" />
+    <Content Include="img\adm\icones-adm\send.png" />
+    <Content Include="img\adm\icones-adm\star.png" />
+    <Content Include="img\adm\icones-adm\system.png" />
+    <Content Include="img\adm\icones-adm\thumb-ok.png" />
+    <Content Include="img\adm\icones-adm\update.png" />
+    <Content Include="img\adm\icones-adm\warning.png" />
+    <Content Include="img\adm\icones-adm\zoom.png" />
+    <Content Include="img\adm\icones-adm\zoom_star.png" />
+    <Content Include="img\adm\layout\favicon.ico" />
+    <Content Include="img\adm\layout\fundo-btn-menu-principal.gif" />
+    <Content Include="img\adm\layout\gradient.jpg" />
+    <Content Include="img\adm\layout\logo-adm.png" />
+    <Content Include="img\adm\layout\logo-plataforma.png" />
+    <Content Include="img\adm\layout\logo-universidade.png" />
+    <Content Include="img\adm\layout\logo.png" />
+    <Content Include="img\adm\layout\logo1.png" />
+    <Content Include="img\fancybox\blank.gif" />
+    <Content Include="img\fancybox\fancybox_buttons.png" />
+    <Content Include="img\fancybox\fancybox_loading.gif" />
+    <Content Include="img\fancybox\fancybox_sprite.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="img\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="img\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="img\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="img\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="img\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="img\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="js\adm\banners.js" />
+    <Content Include="js\adm\cadastrar-cliente.js" />
+    <Content Include="js\adm\cadastrar-produto.js" />
+    <Content Include="js\adm\categoria.js" />
+    <Content Include="js\adm\clientes.js" />
+    <Content Include="js\adm\configuracoes.js" />
+    <Content Include="js\adm\contato.js" />
+    <Content Include="js\adm\editar-banners.js" />
+    <Content Include="js\adm\editar-fabricantes.js" />
+    <Content Include="js\adm\editar-usuario.js" />
+    <Content Include="js\adm\fabricantes.js" />
+    <Content Include="js\adm\geral.js" />
+    <Content Include="js\adm\inicio.js" />
+    <Content Include="js\adm\login.js" />
+    <Content Include="js\adm\noticia.js" />
+    <Content Include="js\adm\produtos.js" />
+    <Content Include="js\adm\subcategoria.js" />
+    <Content Include="js\cidades-estados.js" />
+    <Content Include="js\editar-cidades-estados.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\jquery-ui-1.8.17.custom.min.js" />
+    <Content Include="js\jquery.cycle.lite.min.js" />
+    <Content Include="js\jquery.fancybox.pack.js" />
+    <Content Include="js\jquery.jcarousel-prod-rel.min.js" />
+    <Content Include="js\jquery.jcarousel.min.js" />
+    <Content Include="js\jquery.maskedinput-1.3.min.js" />
+    <Content Include="js\jquery.price_format.1.7.min.js" />
+    <Content Include="js\jquery.tablesorter.min.js" />
+    <Content Include="js\jquery.tools.min.js" />
+    <Content Include="js\jquery.validate.min.js" />
+    <Content Include="js\preenche-endereco-por-cep.js" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cursos.aspx.cs">
+      <DependentUpon>Cursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cursos.aspx.designer.cs">
+      <DependentUpon>Cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jogos.aspx.cs">
+      <DependentUpon>Jogos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jogos.aspx.designer.cs">
+      <DependentUpon>Jogos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterUS.Master.cs">
+      <DependentUpon>MasterUS.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterUS.Master.designer.cs">
+      <DependentUpon>MasterUS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilAluno.aspx.cs">
+      <DependentUpon>PerfilAluno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilAluno.aspx.designer.cs">
+      <DependentUpon>PerfilAluno.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cursos.aspx" />
+    <Content Include="Jogos.aspx" />
+    <Content Include="MasterUS.Master" />
+    <Content Include="PerfilAluno.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{210D2EB9-D97E-4F9A-803D-4FE8489A7934}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{5B16D898-4725-4FAE-9287-82FCDE73B8F8}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56842</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

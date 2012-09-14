@@ -1,0 +1,126 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterUS.master.cs" Inherits="Projeto_Midias.MasterUS" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Fundação Santo André - Portal de Engenharia de Software</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"" />
+    <meta name="language" content="portuguese, PT-BR, português" />
+    <meta name="author" content="Fundação Sandto André" />
+    <meta name="date" content="18/04/2012" />
+    <meta name="copyright" content="Universidade de Software" />
+    <meta name="company" content="Universidade de Software" />
+    <meta name="rating" content="General" />
+    <meta name="classification" content="Internet" />
+    <meta name="doc-class" content="completed" />
+    <meta name="doc-rights" content="public" />
+    <meta name="resource-type" content="document" />
+    <meta name="expires" content="0" />
+    <meta name="robots" content="noindex,nofollow">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilobase.css" rel="stylesheet" type="text/css" />
+    <link href="css/inicio.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="../js/jquery.tools.min.js"></script>
+
+    <script type="text/javascript" src="../js/adm/geral.js"></script>
+
+    <script type="text/javascript" src="../js/adm/inicio.js"></script>
+
+    <script src="../jQuery.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- LAYOUT -->
+    <div class="layout">
+        <!-- TOPO -->
+        <div class="topo">
+            <h1>
+                <a href="#" title="Universidade do Software">Universidade do Software - Área do 
+                Aluno</a></h1>
+        </div>
+
+        <!-- FIM TOPO -->
+        <!-- MENU PRINCIPAL -->
+        <div class="menu_principal">
+            <ul>
+                <li class="btn_menu_principal" onclick="changeTab('perfil');"><a href="#" title="Perfil">
+                    Perfil</a></li>
+                <li class="btn_menu_principal_precionado" onclick="changeTab('cursos');"><a href="#"
+                    title="Cursos">Cursos</a></li>
+                <li class="btn_menu_principal_precionado"><a href="#" title="Jogos">Jogos</a></li>
+                <li class="btn_menu_sair" style="width: 44px; margin-right: 0;"><a href="#" title="Sair">
+                    Sair</a></li>
+            </ul>
+        </div>
+        <!-- FIM MENU PRINCIPAL -->
+        <!-- CORPO LAYOUT-->
+        <div>
+            <div class="corpo">
+              
+                    <h1 class="titulo_principal">
+                        <asp:Label ID="lblSaudacao" runat="server"></asp:Label></h1>
+                    <!-- COLUNA 1 -->
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <div class="coluna1">
+                        <div id="div_perfil" class="caixa">
+                            <h2 class="titulo_secundario">
+                                <asp:Label ID="lblTitle" runat="server"></asp:Label></h2>
+                          
+                        </div>
+                    </div>
+                
+                    </asp:ContentPlaceHolder>
+                    <!-- FIM COLUNA 1 -->
+                
+                <!-- COLUNA 2 -->
+                <div class="coluna2">
+                    <div class="caixa_especial">
+                        <h2 class="titulo_secundario">
+                            Últimos Cursos Cadastrados:</h2>
+                        <!-- PRODUTO -->
+                        <div class="ultimos_produtos">
+                            <h3 class="titulo_terceiro">
+                                TESTE</h3>
+                            <div class="img" style="background-image: ; background-color: #fff; background-position: center center;
+                                background-repeat: no-repeat;">
+                            </div>
+                            <p>
+                                <a href="#" title="Editar">Editar</a> | <a href="#" title="Visualizar" target="_blank">
+                                    Visualizar</a></p>
+                        </div>
+                        <!-- FIM PRODUTO -->
+                        <h2 class="titulo_secundario">Pesquisar Curso:</h2>
+                        <div style="width:98%; float:left;">
+                        <asp:TextBox ID="txtPesquisa" runat="server" CssClass="campos_formulario" Width="158px"></asp:TextBox>
+                        <asp:Button ID="btnPesquisa" runat="server" Text="Pesquisar"  CssClass="botao"  style="float:right;" />
+                        </div>
+                        <span class="clear"></span>
+                        
+                    </div>
+                </div>
+                <!-- FIM COLUNA 2 -->
+                <span class="clear"></span>
+                <!-- FIM CORPO LAYOUT-->
+            </div>
+        </div>
+        <p style="text-align:center">Sistema Aluno Universidade do Software 1.0 © 2012 &nbsp;&nbsp;<a href="http://www.universidadedosoftware.com.br" title="Universidade do Software"><img src="img/adm/layout/logo-universidade.png" width="78" height="26" alt="Universidade do Software" /></a><br/>
+            Recomendações Mínimas: Internet Explorer 8 ou Firefox 3.6. Navegador 
+            Recomendável: Google Chrome Resolução de 1024px por 768px.</p>
+    </div>
+    </form>
+</body>
+</html>
