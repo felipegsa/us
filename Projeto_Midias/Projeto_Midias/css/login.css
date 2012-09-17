@@ -3,9 +3,9 @@
 
 /* ------------------------------ LOGIN ------------------------------ */
 .login{
-	margin: 130px auto 5px auto;
+	margin: 20px auto 5px auto;
 	padding: 10px;
-	height: 259px;
+	height: 159px;
 	width: 342px;
 	border: 2px solid #DDDDDD;
 	background: #FFF;
@@ -13,12 +13,7 @@
 }
 
 .login h1 {
-	display: block;
-	margin:0 auto 10px auto;
-	height: 69px;
-	width: 330px;
-	background:url(../../img/adm/layout/logo-adm.png);
-	text-indent:-6000px;
+
 
 }
 
@@ -44,7 +39,7 @@
 
 #esqueceu_senha
 {
-	width:500px;
+	width:200px;
 }
 
 #esqueceu_senha table

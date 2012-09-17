@@ -19,5 +19,22 @@ namespace Projeto_Midias
         {
 
         }
+        protected void btnCadastrar_Click(object sender, EventArgs e) {
+            Model.Aluno objAluno = new Model.Aluno();
+            objAluno.Email = txtEmail.Text;
+            objAluno.Nome = txtNome.Text;
+            objAluno.Senha = txtSenha.Text;
+
+            try
+            {
+                BLL.Aluno bllAluno = new BLL.Aluno();
+                bllAluno.CadastrarAluno(objAluno);
+            }
+            catch (Exception ex)
+            {                
+                throw new Exception(ex.Message);
+            }
+           
+        }
     }
 }

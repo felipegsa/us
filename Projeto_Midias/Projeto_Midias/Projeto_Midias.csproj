@@ -192,6 +192,13 @@
     <Compile Include="PerfilAluno.aspx.designer.cs">
       <DependentUpon>PerfilAluno.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cursos.aspx" />
@@ -199,6 +206,7 @@
     <Content Include="Jogos.aspx" />
     <Content Include="MasterUS.Master" />
     <Content Include="PerfilAluno.aspx" />
+    <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

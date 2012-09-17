@@ -49,9 +49,7 @@
     <Compile Include="Curso.cs" />
     <Compile Include="Enum\EAcaoCurso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Session\" />
+    <Compile Include="Session\Session.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

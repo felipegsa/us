@@ -51,6 +51,7 @@
     <Compile Include="CommomDAL.cs" />
     <Compile Include="CommomDALP.cs" />
     <Compile Include="CURSODAL.cs" />
+    <Compile Include="Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

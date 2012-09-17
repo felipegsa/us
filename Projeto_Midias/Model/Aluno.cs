@@ -9,6 +9,7 @@ namespace Model
     {   
         private string _nome;
         private string _email;
+        private string _senha;
         private Curso _cursoCadastrado;
         public string Nome { 
             get 
@@ -21,6 +22,13 @@ namespace Model
             { return this._email; }
             set
             { this._email = value; }
+        }
+        public string Senha
+        {
+            get
+            { return this._senha; }
+            set
+            { this._senha = value; }
         }
         public Curso CursoCadastrado
         {
