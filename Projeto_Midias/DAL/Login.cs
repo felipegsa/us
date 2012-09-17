@@ -32,6 +32,7 @@ namespace DAL
             catch (Exception ex)
             { 
                 //log
+                return false;
             }
             retorno = true;
             return retorno;
