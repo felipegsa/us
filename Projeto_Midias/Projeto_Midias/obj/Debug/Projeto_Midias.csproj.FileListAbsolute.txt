@@ -37,7 +37,9 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\P
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\Projeto_Midias.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\BLL.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\Mono.Security.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\DAL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\Npgsql.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\BLL.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\DAL.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\Model.pdb

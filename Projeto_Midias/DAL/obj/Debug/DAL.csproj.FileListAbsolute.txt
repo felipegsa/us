@@ -26,6 +26,8 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\D
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\DAL.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\DAL.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\Npgsql.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\Mono.Security.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\Model.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\obj\Debug\DAL.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\obj\Debug\DAL.pdb

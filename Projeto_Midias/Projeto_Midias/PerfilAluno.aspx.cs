@@ -51,6 +51,7 @@ namespace Projeto_Midias
 
                 lblNomeCurso.Text = curso.Nome;
                 lblidCurso.Text = (string)curso.Id.ToString();
+                lblAssuntoCurso.Text = curso.Assunto;
                 lnkAcaoCurso.Text = "Concluido";
 
             }

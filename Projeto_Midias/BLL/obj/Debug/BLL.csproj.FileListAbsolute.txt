@@ -31,6 +31,8 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\B
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\BLL.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\DAL.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\Npgsql.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\Mono.Security.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\Model.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\bin\Debug\DAL.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\BLL\obj\Debug\BLL.dll

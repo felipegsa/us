@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using MySql.Data.MySqlClient;
+using Npgsql;
 using System.Data;
 using System.IO;
 
@@ -13,16 +13,17 @@ namespace DAL
         public List<Model.Curso> ConsultarCursos()
         {
             List<Model.Curso> listCurso = new List<Model.Curso>();
-            CommomDAL commomBase = new CommomDAL();
+            CommomDALP commomBase = new CommomDALP();
             commomBase.OpenConnection();
             string strCom;
-            strCom = "Select       * From         TB_CURSO";   
-            MySqlCommand cmd = new MySqlCommand(strCom, commomBase.connection);
-            MySqlDataReader dataReader = cmd.ExecuteReader();
+            strCom = "Select       * From         CURSO";
+            NpgsqlCommand cmd = new NpgsqlCommand(strCom, commomBase.connection);
+            NpgsqlDataReader dataReader = cmd.ExecuteReader();
             while (dataReader.Read()) {
                 Model.Curso objCurso = new Model.Curso();
-                objCurso.Id = (int)dataReader["id"];
-                objCurso.Nome = (string)dataReader["nome"];
+                objCurso.Id = (int)dataReader["id_curso"];
+                objCurso.Nome = (string)dataReader["tl_curso"];
+                objCurso.Assunto = (string)dataReader["ds_curso"];
                 listCurso.Add(objCurso);
             }
             dataReader.Close();
