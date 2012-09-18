@@ -7,11 +7,10 @@ namespace BLL
 {
     public class Login
     {
-        public Boolean LogarUsuario(string email, string pass)
+        public void LogarUsuario(string email, string pass)
         {
-            Boolean retorno = false;
             DAL.Login bllLogin = new DAL.Login();
-            return bllLogin.LogarUsuario(email, pass);
+            bllLogin.LogarUsuario(email, pass);
         }
     }
 }

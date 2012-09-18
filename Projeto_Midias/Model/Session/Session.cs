@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Web;
 
 namespace Model.Session
 {
-    public abstract class Session
+    public static class Session
     {
+      
     }
 }
  

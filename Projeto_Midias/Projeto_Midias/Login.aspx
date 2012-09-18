@@ -45,6 +45,7 @@
 
 <!-- ERRO -->
 <div id="erro" style="width: 342px;">
+
 </div>
 <!-- ERRO -->
 
@@ -72,7 +73,7 @@
 	  </tr>
 	  <td colspan="2" style="text-align:center;">
 	      <input type="submit" name="button" id="button" value="Enviar" class="btn_submit" /></td>
-	    </tr>
+	
 	</table>
 	</form>
     
@@ -85,7 +86,8 @@
 <h1>Universidade do Software - Perfil do aluno</h1>
 <h2>Digite os seus dados para o acesso:</h2>
 
-<form id="login" runat="server">
+<form id="login" runat="server" runat="server">
+
 <table>
   <tr>
     <td><label for="login" class="titulo_campos">Login:</label></td>

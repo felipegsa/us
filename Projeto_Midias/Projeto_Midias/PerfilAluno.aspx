@@ -9,9 +9,7 @@
             <HeaderTemplate>
              <table id="todos_contatos">
                 <tr>
-                <th width="50">Id</th>
                 <th>Nome</th>
-                <th>E-mail</th>
                 <th>Assunto</th> 
                 <th>Telefone</th>
                 <th>Data / Hora</th>
