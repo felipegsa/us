@@ -49,9 +49,9 @@ namespace Projeto_Midias
                 LinkButton lnkAcaoCurso = (LinkButton)e.Item.FindControl("lnkAcaoCurso");
 
 
-                lblNomeCurso.Text = curso.Nome;
-                lblidCurso.Text = (string)curso.Id.ToString();
-                lblAssuntoCurso.Text = curso.Assunto;
+                lblNomeCurso.Text = curso.Tl_curso;
+                lblidCurso.Text = (string)curso.Id_curso.ToString();
+                lblAssuntoCurso.Text = curso.Ds_curso;
                 lnkAcaoCurso.Text = "Concluido";
 
             }

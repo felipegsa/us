@@ -7,87 +7,40 @@ namespace Model
 {
     public class Curso
     {
-        private int _id;
-        private String _nome;
-        private String _email;
-        private String _assunto;
-        private int _telefone;
-        private DateTime _data;
-        private Enum.EAcaoCurso _acao;
-        public int Id
+        private int id_curso;
+        private string tl_curso;
+        private string ds_curso;
+        private DateTime dt_cadastro;
+
+        public int Id_curso
         {
-            get
-            {
-                return this._id;
-            }
-            set
-            {
-                this._id = value;
-            }
+            get { return id_curso; }
+            set { id_curso = value; }
         }
-        public string Nome
+
+        public string Tl_curso
         {
-            get
-            {
-                return this._nome;
-            }
-            set
-            {
-                this._nome = value;
-            }
+            get { return tl_curso; }
+            set { tl_curso = value; }
         }
-        public string Email
+
+        public string Ds_curso
         {
-            get
-            {
-                return this._email;
-            }
-            set
-            {
-                this._email = value;
-            }
+            get { return ds_curso; }
+            set { ds_curso = value; }
         }
-        public string Assunto
+
+        public DateTime Dt_cadastro
         {
-            get
-            {
-                return this._assunto;
-            }
-            set
-            {
-                this._assunto = value;
-            }
+            get { return dt_cadastro; }
+            set { dt_cadastro = value; }
         }
-        public int Telefone
+
+        public Curso()
         {
-            get
-            {
-                return this._telefone;
-            }
-            set
-            {
-                this._telefone = value;
-            }
-        }
-        public DateTime Data
-        {
-            get
-            {
-                return this._data;
-            }
-            set
-            {
-                this._data = value;
-            }
-        }
-        public Enum.EAcaoCurso Acao
-        {
-            get {
-                return this._acao;
-            }
-            set {
-                this._acao = value;
-            }
+            this.Tl_curso = "";
+            this.Ds_curso = "";
+            this.Dt_cadastro = DateTime.MinValue;
         }
     }
 }

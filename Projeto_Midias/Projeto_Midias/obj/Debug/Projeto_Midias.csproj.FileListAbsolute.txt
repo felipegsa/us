@@ -45,3 +45,17 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\P
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\bin\Model.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\obj\Debug\Projeto_Midias.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\Projeto_Midias\obj\Debug\Projeto_Midias.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\Projeto_Midias.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\Projeto_Midias.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\BLL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\Model.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\Mono.Security.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\DAL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\MySql.Data.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\Npgsql.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\BLL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\DAL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\bin\Model.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\obj\Debug\Projeto_Midias.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\Projeto_Midias\obj\Debug\Projeto_Midias.pdb

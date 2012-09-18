@@ -31,3 +31,12 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\D
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\bin\Debug\Model.pdb
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\obj\Debug\DAL.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\US\Projeto_Midias\DAL\obj\Debug\DAL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\DAL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\DAL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\Model.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\MySql.Data.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\Npgsql.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\Model.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\obj\Debug\DAL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\obj\Debug\DAL.pdb

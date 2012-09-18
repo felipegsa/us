@@ -12,8 +12,8 @@ namespace BLL
         {
             DAL.CursoDAL dalCurso = new DAL.CursoDAL();
             List<Model.Curso> objCurso = new List<Model.Curso>();
-            objCurso = dalCurso.ConsultarCursos();
-           
+            objCurso = dalCurso.obter();
+
             return objCurso;
             //aqui se tiver alguma regra de negocio será implemtandada aqui
         }
