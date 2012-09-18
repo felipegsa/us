@@ -51,3 +51,22 @@ C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Pr
 C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\fr\Npgsql.resources.dll
 C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\ja\Npgsql.resources.dll
 C:\Users\Diego\Documents\Visual Studio 2008\Projects\Universidade_software\us\Projeto_Midias\DAL\bin\Debug\zh-CN\Npgsql.resources.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\DAL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\DAL.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\Model.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\Mono.Security.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\Npgsql.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\policy.2.0.Npgsql.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\Model.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\Npgsql.pdb
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\Npgsql.xml
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\de\Npgsql.resources.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\es\Npgsql.resources.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\fi\Npgsql.resources.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\fr\Npgsql.resources.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\ja\Npgsql.resources.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\zh-CN\Npgsql.resources.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\bin\Debug\policy.2.0.Npgsql.config
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\obj\Debug\DAL.dll
+C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\DAL\obj\Debug\DAL.pdb
