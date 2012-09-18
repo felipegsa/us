@@ -170,12 +170,28 @@ namespace DAL
 
                     parametros[0].ParameterName = "@TL_CURSO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
-                    parametros[0].Value = novo_curso.Tl_curso;
+
+                    if (novo_curso.Tl_curso == "")
+                    {
+                        parametros[0].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[0].Value = novo_curso.Tl_curso;
+                    }
                     cmd.Parameters.Add(parametros[0]);
 
                     parametros[1].ParameterName = "@DS_CURSO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
-                    parametros[1].Value = novo_curso.Ds_curso;
+
+                    if (novo_curso.Ds_curso == "")
+                    {
+                        parametros[1].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[1].Value = novo_curso.Ds_curso;
+                    }
                     cmd.Parameters.Add(parametros[1]);
 
                     parametros[2].ParameterName = "@DT_CADASTRO";
@@ -222,12 +238,28 @@ namespace DAL
 
                     parametros[1].ParameterName = "@TL_CURSO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
-                    parametros[1].Value = curso.Tl_curso;
+
+                    if (curso.Tl_curso == "")
+                    {
+                        parametros[1].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[1].Value = curso.Tl_curso;
+                    }
                     cmd.Parameters.Add(parametros[1]);
 
                     parametros[2].ParameterName = "@DS_CURSO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Varchar;
-                    parametros[2].Value = curso.Ds_curso;
+
+                    if (curso.Ds_curso == "")
+                    {
+                        parametros[2].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[2].Value = curso.Ds_curso;
+                    }
                     cmd.Parameters.Add(parametros[2]);
 
                     linhas_afetadas = cmd.ExecuteNonQuery();
