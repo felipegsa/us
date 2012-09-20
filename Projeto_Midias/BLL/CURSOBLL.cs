@@ -17,5 +17,17 @@ namespace BLL
             return objCurso;
             //aqui se tiver alguma regra de negocio será implemtandada aqui
         }
+
+        public void Salvar(string pNome, string pDescricao)
+        {
+            DAL.CursoDAL dalCurso = new DAL.CursoDAL();
+            Curso objCurso = new Curso();            
+
+            objCurso.Tl_curso = pNome;
+            objCurso.Ds_curso = pDescricao;
+            objCurso.Dt_cadastro = DateTime.Now;
+            dalCurso.salvar(objCurso);
+            //aqui se tiver alguma regra de negocio será implemtandada aqui
+        }
     }
 }
