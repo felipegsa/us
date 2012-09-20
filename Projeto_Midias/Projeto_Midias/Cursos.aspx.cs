@@ -9,6 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Collections.Generic;
+using BLL;
 
 namespace Projeto_Midias
 {
@@ -54,6 +55,19 @@ namespace Projeto_Midias
                 lblAssuntoCurso.Text = curso.Ds_curso;
                 lnkAcaoCurso.Text = "Concluido";
 
+            }
+        }
+
+        protected void lkd_inserir_Click(object sender, EventArgs e)
+        {
+            if (txtNome.Text != "" && txtDescricao.Text != "")
+            {
+                CursoBLL objBLL = new CursoBLL();
+                objBLL.Salvar(txtNome.Text, txtDescricao.Text);
+            }
+            else
+            {
+                this.ClientScript.RegisterStartupScript(this.GetType(), "show", "<script>alert('Por favor preencha todos os campos.');</script>");
             }
         }
     }
