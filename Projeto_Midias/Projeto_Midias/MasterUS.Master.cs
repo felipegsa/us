@@ -15,8 +15,8 @@ namespace Projeto_Midias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblSaudacao.Text ="Olá " + Request.QueryString["nome"] + " " + Request.QueryString["Sobre"];
-            
+            lblSaudacao.Text = Model.Session.Session.Aluno.Nome;
+            lblNome.Text = Model.Session.Session.Aluno.Nome;
         }
     }
 }

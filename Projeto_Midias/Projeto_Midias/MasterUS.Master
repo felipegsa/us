@@ -89,12 +89,9 @@
                 <!-- COLUNA 2 -->
                 <div class="coluna2" style="width:300px;">
                     <div class="caixa_especial">
-                        <h2 class="titulo_secundario">
-                            Aluno:</h2>
-                        <!-- PRODUTO -->
-                        <div class="ultimos_produtos">
+                       <div class="ultimos_produtos">
                             <h3 class="titulo_terceiro">
-                                FELIPE</h3>
+                                <asp:Label ID="lblNome" runat="server"></asp:Label></h3>
                             <asp:Image ID="Image1" runat="server"  CssClass="img" style="background-position: center center;"/>   
                             <p>
                                <asp:HyperLink ID="hlEditar" runat="server" NavigateUrl="~/DadosAluno.aspx">Editar</asp:HyperLink>                              
