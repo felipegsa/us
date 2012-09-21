@@ -121,6 +121,40 @@ namespace DAL
             return lista;
         }
 
+        public List<Curso> ObterCursoXAluno(int pIdAluno) {
+            List<Curso> vListCurso = new List<Curso>();
+            Curso vCurso = null;
+            string comandoSql = "SELECT  A.DS_CURSO, A.TL_CURSO , A.DUR_CURSO , B.DT_CADASTRO FROM CURSO A , USUARIO_CURSO B WHERE B.ID_USUARIO = @ID_USUARIO AND A.ID_CURSO = B.ID_CURSO;";
+            try 
+	        {	        
+        	    using (NpgsqlConnection  conn = ConnectionFactory.createConnection())
+                {
+                    NpgsqlCommand cmd = new NpgsqlCommand(comandoSql,conn);
+                    NpgsqlParameter[] parametros = new NpgsqlParameter[1];
+                    parametros[0] = new NpgsqlParameter();
+                    parametros[0].ParameterName = "@ID_USUARIO";
+                    parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                    parametros[0].Value = pIdAluno;
+                    cmd.Parameters.Add(parametros[0]);
+
+                    using (NpgsqlDataReader  dr = cmd.ExecuteReader())
+                    {
+                        
+                       while (dr.Read())
+	                    {
+                            vCurso = carregarCursoXAluno(dr);
+                            vListCurso.Add(vCurso);
+	                    }
+                    }
+                }
+	        }
+	        catch (Exception ex)
+	        {        		
+		        throw new ExceptionDAL(ex.Message);
+	        }
+            return vListCurso;
+        }       
+
         public Curso obter(int id_curso)
         {
             Curso curso = null;
@@ -313,6 +347,15 @@ namespace DAL
             curso.Tl_curso = data_reader.IsDBNull(data_reader.GetOrdinal("TL_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("TL_CURSO"));
             curso.Ds_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DS_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("DS_CURSO"));
             curso.Dt_cadastro = data_reader.IsDBNull(data_reader.GetOrdinal("DT_CADASTRO")) ? DateTime.MinValue : data_reader.GetDateTime(data_reader.GetOrdinal("DT_CADASTRO"));
+            return curso;
+        }
+        public Curso carregarCursoXAluno(NpgsqlDataReader data_reader)
+        {
+            Curso curso = new Curso();
+            curso.Tl_curso = data_reader.IsDBNull(data_reader.GetOrdinal("TL_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("TL_CURSO"));
+            curso.Ds_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DS_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("DS_CURSO"));
+            curso.Dur_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DUR_CURSO")) ? 0 : data_reader.GetInt32(data_reader.GetOrdinal("DUR_CURSO"));
+            curso.Dt_cadastro_usuario = data_reader.IsDBNull(data_reader.GetOrdinal("DT_CADASTRO")) ? DateTime.MinValue : data_reader.GetDateTime(data_reader.GetOrdinal("DT_CADASTRO"));
             return curso;
         }
     }

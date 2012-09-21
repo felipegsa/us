@@ -28,12 +28,13 @@ namespace Projeto_Midias
 
         protected void rptCursos_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            if (e.CommandName == "Concluido")
-                //TODO chamar o a tela com o pdf e o certificado
-                throw new Exception("Falta implementar o certificado");
-            else if (e.CommandName == "Fazer")
-                //TODO chamar o a tela com a aula à fazer
-                throw new Exception("Falta implementar o as aulas");
+            
+
+            int vIdCurso = Convert.ToInt32(e.CommandArgument);         
+                       
+            BLL.Aluno bllAluno = new BLL.Aluno();
+            bllAluno.CadastrarAlunoXCurso(vIdCurso);
+            Response.Redirect("PerfilAluno.aspx");            
         }
         protected void rptCursos_ItemDataBound(Object Sender, RepeaterItemEventArgs e)
         {
@@ -43,17 +44,20 @@ namespace Projeto_Midias
 
                 Literal lblidCurso = (Literal)e.Item.FindControl("lblidCurso");
                 Literal lblNomeCurso = (Literal)e.Item.FindControl("lblNomeCurso");
-                Literal lblEmailCurso = (Literal)e.Item.FindControl("lblEmailCurso");
-                Literal lblAssuntoCurso = (Literal)e.Item.FindControl("lblAssuntoCurso");
-                Literal lblTelefoneCurso = (Literal)e.Item.FindControl("lblTelefoneCurso");
-                Literal lblHorarioCurso = (Literal)e.Item.FindControl("lblHorarioCurso");
-                LinkButton lnkAcaoCurso = (LinkButton)e.Item.FindControl("lnkAcaoCurso");
+                Literal lblDsCurso = (Literal)e.Item.FindControl("lblDsCurso");
+                Literal lblDuracaoCurso = (Literal)e.Item.FindControl("lblDuracaoCurso");
+                Literal lblDataCadastro = (Literal)e.Item.FindControl("lblDataCadastro");
+                LinkButton lnkCadastrar = (LinkButton)e.Item.FindControl("lnkCadastrar");
 
 
-                lblNomeCurso.Text = curso.Tl_curso;
+               
                 lblidCurso.Text = (string)curso.Id_curso.ToString();
-                lblAssuntoCurso.Text = curso.Ds_curso;
-                lnkAcaoCurso.Text = "Concluido";
+                lblNomeCurso.Text = curso.Tl_curso;
+                lblDsCurso.Text = curso.Ds_curso;
+                lblDuracaoCurso.Text = (string)curso.Dur_curso.ToString();
+                lblDataCadastro.Text = (string)curso.Dt_cadastro.ToString();
+                lnkCadastrar.Text = "Cadastrar-se";
+                lnkCadastrar.CommandArgument = (string)curso.Id_curso.ToString();
 
             }
         }

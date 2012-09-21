@@ -25,5 +25,13 @@ namespace BLL
             }
             dalAluno.CadastrarAluno(pAluno);
         }
+        public void CadastrarAlunoXCurso(int pIdCurso) {
+
+            DAL.Aluno dalAluno = new DAL.Aluno();
+            DAL.CursoDAL dalCurso = new DAL.CursoDAL();
+            dalAluno.CadastrarAlunoXCurso(pIdCurso);
+            Model.Session.Session.Aluno.CursoCadastrado = new List<Model.Curso>();
+            Model.Session.Session.Aluno.CursoCadastrado = dalCurso.ObterCursoXAluno(Model.Session.Session.Aluno.Id);
+        }
     }      
 }

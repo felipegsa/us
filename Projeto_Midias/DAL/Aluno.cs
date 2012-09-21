@@ -48,5 +48,33 @@ namespace DAL
             }
             
         }
+        public void CadastrarAlunoXCurso(int pIdCurso)
+        {
+            int result = 0;
+            string comandoSql = "INSERT INTO USUARIO_CURSO VALUES(:ID_USUARIO, :ID_CURSO, NOW());";
+
+            try
+            {
+                using (NpgsqlConnection conexao = ConnectionFactory.createConnection())
+                {
+                    NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
+
+                    cmd.Parameters.AddWithValue(":ID_USUARIO", Model.Session.Session.Aluno.Id);
+                    cmd.Parameters.AddWithValue(":ID_CURSO", pIdCurso);
+
+                    result = cmd.ExecuteNonQuery();                
+                    if (result != 1)
+                    {
+                        throw new ExceptionDAL("Não foi possivel se cadastrar no curso!");
+                    }
+                    
+                }
+            }
+            catch (Exception ex)
+            {
+                // neste ponto poderia ser gerado um log...
+                throw new ExceptionDAL(ex.Message);
+            }           
+        }
     }
 }
