@@ -35,6 +35,18 @@ namespace BLL
             return curso_dal.obter(curso);
         }
 
+        public List<Curso> obter(Usuario id_usuario)
+        {
+            // valida o id_usaurio
+            if (id_usuario.Id_usuario == 0)
+            {
+                // retorna uma lista vazia
+                return new List<Curso>();
+            }
+
+            return curso_dal.obter(id_usuario);
+        }
+
         public int salvar(Curso novo_curso)
         {
             // se tiver alguma regra de negocio será implemtandada aqui

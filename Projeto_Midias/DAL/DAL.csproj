@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+    <Compile Include="Aula_dal.cs" />
     <Compile Include="CommomDAL.cs" />
     <Compile Include="CommomDALP.cs" />
     <Compile Include="ConnectionFactory.cs" />

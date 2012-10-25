@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
+    <Compile Include="Aula_BLL.cs" />
     <Compile Include="BaseBLL.cs" />
     <Compile Include="CURSOBLL.cs" />
     <Compile Include="Login.cs" />

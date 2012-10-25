@@ -104,6 +104,44 @@ namespace DAL
             return lista;
         }
 
+        public List<Curso> obter(Usuario id_usuario)
+        {
+            List<Curso> lista = new List<Curso>();
+            string comandoSql = "SELECT C.ID_CURSO AS ID_CURSO, C.TL_CURSO AS TL_CURSO, C.DS_CURSO AS DS_CURSO, C.OBJ_CURSO AS OBJ_CURSO, C.TOPICOS_CURSO AS TOPICOS_CURSO, ";
+            comandoSql += "C.PRE_REQ_CURSO AS PRE_REQ_CURSO, C.DURACAO_CURSO AS DURACAO_CURSO, C.DT_CADASTRO AS DT_CADASTRO FROM CURSO C ";
+            comandoSql += "INNER JOIN CURSO_USUARIO CU ON CU.ID_CURSO = C.ID_CURSO ";
+            comandoSql += "WHERE CU.ID_USUARIO;";
+
+            try
+            {
+                using (NpgsqlConnection conexao = ConnectionFactory.createConnection())
+                {
+                    NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
+                    NpgsqlParameter[] parametros = new NpgsqlParameter[1];
+
+                    parametros[0].ParameterName = "@ID_USUARIO";
+                    parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                    parametros[0].Value = id_usuario.Id_usuario;
+                    cmd.Parameters.Add(parametros[0]);
+
+                    using (NpgsqlDataReader data_reader = cmd.ExecuteReader())
+                    {
+                        while (data_reader.Read())
+                        {
+                            lista.Add(carregar(data_reader));
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // neste ponto poderia ser gerado um log...
+                return lista;
+            }
+
+            return lista;
+        }
+
         public List<Curso> ObterCursoXAluno(int pIdAluno) {
             List<Curso> vListCurso = new List<Curso>();
             Curso vCurso = null;
