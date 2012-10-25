@@ -2,14 +2,12 @@
 using System.Collections;
 using System.Configuration;
 using System.Data;
-using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
-using System.Xml.Linq;
 
 namespace Projeto_Midias
 {
@@ -17,8 +15,8 @@ namespace Projeto_Midias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblSaudacao.Text ="Olá " + Request.QueryString["nome"] + " " + Request.QueryString["Sobre"];
-            
+            lblSaudacao.Text = Model.Session.Session.Aluno.Nome;
+            lblNome.Text = Model.Session.Session.Aluno.Nome;
         }
     }
 }

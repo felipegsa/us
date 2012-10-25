@@ -10,7 +10,9 @@ namespace Model
         private int id_curso;
         private string tl_curso;
         private string ds_curso;
+        private int dur_curso;
         private DateTime dt_cadastro;
+        private DateTime dt_cadastro_usuario;
 
         public int Id_curso
         {
@@ -29,11 +31,20 @@ namespace Model
             get { return ds_curso; }
             set { ds_curso = value; }
         }
-
+         public int Dur_curso
+        {
+            get { return dur_curso; }
+            set { dur_curso = value; }
+        }
         public DateTime Dt_cadastro
         {
             get { return dt_cadastro; }
             set { dt_cadastro = value; }
+        }
+        public DateTime Dt_cadastro_usuario
+        {
+            get { return dt_cadastro_usuario; }
+            set { dt_cadastro_usuario = value; }
         }
 
         public Curso()

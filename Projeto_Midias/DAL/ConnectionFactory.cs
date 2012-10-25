@@ -15,7 +15,7 @@ namespace DAL
 
         public static NpgsqlConnection createConnection()
         {
-            string connectionString = "Server=localhost;Port=5432;Database=universidade;User Id=postgres;Password=hxhr695684;Pooling=true;MinPoolSize=1;MaxPoolSize=30;CommandTimeout=30;ConnectionLifeTime=30;Timeout=40";
+            string connectionString = "Server=5.184.1.37;Port=5432;Database=universidade;User Id=postgres;Password=hxhr695684;Pooling=true;MinPoolSize=1;MaxPoolSize=30;CommandTimeout=30;ConnectionLifeTime=30;Timeout=40";
             NpgsqlConnection nova_conexao = null;
 
             try

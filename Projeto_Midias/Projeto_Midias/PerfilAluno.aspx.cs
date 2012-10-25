@@ -2,14 +2,12 @@
 using System.Collections;
 using System.Configuration;
 using System.Data;
-using System.Linq;
 using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
-using System.Xml.Linq;
 using System.Collections.Generic;
 namespace Projeto_Midias
 {
@@ -17,12 +15,15 @@ namespace Projeto_Midias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            BLL.CursoBLL bllCurso = new BLL.CursoBLL();
-            List<Model.Curso> meuCursos = new List<Model.Curso>();
+            //BLL.CursoBLL bllCurso = new BLL.CursoBLL();
+            //List<Model.Curso> meuCursos = new List<Model.Curso>();
 
-            meuCursos = bllCurso.ConsultarCurso();
+            //meuCursos = bllCurso.ConsultarCurso();
            
-            rptCursos.DataSource = meuCursos;
+            //rptCursos.DataSource = meuCursos;
+            //rptCursos.DataBind();
+
+            rptCursos.DataSource = Model.Session.Session.Aluno.CursoCadastrado;
             rptCursos.DataBind();
         }
 
@@ -40,18 +41,17 @@ namespace Projeto_Midias
             if (e.Item.DataItem != null) {
                 Model.Curso curso = (Model.Curso)e.Item.DataItem;
 
-                Literal lblidCurso = (Literal)e.Item.FindControl("lblidCurso");
                 Literal lblNomeCurso = (Literal)e.Item.FindControl("lblNomeCurso");
-                Literal lblEmailCurso = (Literal)e.Item.FindControl("lblEmailCurso");
-                Literal lblAssuntoCurso = (Literal)e.Item.FindControl("lblAssuntoCurso");
-                Literal lblTelefoneCurso = (Literal)e.Item.FindControl("lblTelefoneCurso");
-                Literal lblHorarioCurso = (Literal)e.Item.FindControl("lblHorarioCurso");
+                Literal lblDescricaoCurso = (Literal)e.Item.FindControl("lblDescricaoCurso");
+                Literal lblDuracaoCurso = (Literal)e.Item.FindControl("lblDuracaoCurso");
+                Literal lblCadastro = (Literal)e.Item.FindControl("lblCadastro");
                 LinkButton lnkAcaoCurso = (LinkButton)e.Item.FindControl("lnkAcaoCurso");
 
 
                 lblNomeCurso.Text = curso.Tl_curso;
-                lblidCurso.Text = (string)curso.Id_curso.ToString();
-                lblAssuntoCurso.Text = curso.Ds_curso;
+                lblDescricaoCurso.Text = curso.Ds_curso;
+                lblDuracaoCurso.Text = (string)curso.Dur_curso.ToString();
+                lblCadastro.Text = (string)curso.Dt_cadastro_usuario.ToString();
                 lnkAcaoCurso.Text = "Concluido";
 
             }

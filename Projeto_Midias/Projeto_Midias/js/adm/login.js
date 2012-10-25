@@ -1,25 +1,32 @@
 // JavaScript Document
 $(function(){//COMEÇO JQUERY
 
-//VALIDAÇÃO DO FORM:	
+//VALIDAÃ‡ÃƒO DO FORMULÃRIO:
 $("#login").validate({
 errorLabelContainer: $("#erro"),
 rules:{//COMEÃ‡O REGRAS
 		login: {
 				required: true,
-				minlength: 3
+				minlength: 4
 			},
 		senha: {
 				required: true,
-				minlength: 3
+				minlength: 4
 			}
 		
 		},//FIM REGRAS
 		messages:{//COMEÃ‡O MENSAGENS
-			login: "&#8226; Informe o seu Login",
-			senha: "&#8226; Informe a sua senha."
-	}//FIM MENSAGENS
-});//FIM VALIDAÇÃO DO FORM
+			login: {
+				required: "* Informe o seu nome.",
+				minlength: "* Seu nome precisa ter no mÃ­nimo 2 caracteres"
+			},
+			senha: {
+				required: "* Informe sua Senha.",
+				minlength: "* Seu nome precisa ter no mÃ­nimo 2 caracteres"
+			}
+			
+		}//FIM MENSAGENS
+});
 
 //VALIDAÇÃO DO FORM:	
 $("#form_esqueceu_senha").validate({
@@ -32,7 +39,7 @@ rules:{//COMEÃ‡O REGRAS
 		codigo: {
 				required: true,
 				minlength: 3
-			},
+			}
 		
 		},//FIM REGRAS
 		messages:{//COMEÃ‡O MENSAGENS

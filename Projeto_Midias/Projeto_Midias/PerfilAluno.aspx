@@ -9,12 +9,10 @@
             <HeaderTemplate>
              <table id="todos_contatos">
                 <tr>
-                <th width="50">Id</th>
                 <th>Nome</th>
-                <th>E-mail</th>
-                <th>Assunto</th> 
-                <th>Telefone</th>
-                <th>Data / Hora</th>
+                <th>Descrição</th> 
+                <th>Duração</th>
+                <th>Data de cadastro</th>
                 <th>Ação</th>
             </tr>
             </HeaderTemplate>
@@ -23,12 +21,10 @@
             </FooterTemplate>
             <ItemTemplate>
               <tr>
-                <td width="50"><asp:Literal ID="lblidCurso" runat="server"></asp:Literal></td>
                 <td><asp:Literal ID="lblNomeCurso" runat="server"></asp:Literal></td>
-                <td><asp:Literal ID="lblEmailCurso" runat="server"></asp:Literal></td>
-                <td><asp:Literal ID="lblAssuntoCurso" runat="server"></asp:Literal></td> 
-                <td><asp:Literal ID="lblTelefoneCurso" runat="server"></asp:Literal></td>
-                <td><asp:Literal ID="lblHorarioCurso" runat="server"></asp:Literal></td>
+                <td><asp:Literal ID="lblDescricaoCurso" runat="server"></asp:Literal></td>
+                <td><asp:Literal ID="lblDuracaoCurso" runat="server"></asp:Literal></td> 
+                <td><asp:Literal ID="lblCadastro" runat="server"></asp:Literal></td>
                 <td><asp:LinkButton ID="lnkAcaoCurso" runat="server"  CommandName="Acao"></asp:LinkButton></td>
             </tr>
             </ItemTemplate>

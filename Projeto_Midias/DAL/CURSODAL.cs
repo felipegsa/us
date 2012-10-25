@@ -121,6 +121,40 @@ namespace DAL
             return lista;
         }
 
+        public List<Curso> ObterCursoXAluno(int pIdAluno) {
+            List<Curso> vListCurso = new List<Curso>();
+            Curso vCurso = null;
+            string comandoSql = "SELECT  A.DS_CURSO, A.TL_CURSO , A.DUR_CURSO , B.DT_CADASTRO FROM CURSO A , USUARIO_CURSO B WHERE B.ID_USUARIO = @ID_USUARIO AND A.ID_CURSO = B.ID_CURSO;";
+            try 
+	        {	        
+        	    using (NpgsqlConnection  conn = ConnectionFactory.createConnection())
+                {
+                    NpgsqlCommand cmd = new NpgsqlCommand(comandoSql,conn);
+                    NpgsqlParameter[] parametros = new NpgsqlParameter[1];
+                    parametros[0] = new NpgsqlParameter();
+                    parametros[0].ParameterName = "@ID_USUARIO";
+                    parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                    parametros[0].Value = pIdAluno;
+                    cmd.Parameters.Add(parametros[0]);
+
+                    using (NpgsqlDataReader  dr = cmd.ExecuteReader())
+                    {
+                        
+                       while (dr.Read())
+	                    {
+                            vCurso = carregarCursoXAluno(dr);
+                            vListCurso.Add(vCurso);
+	                    }
+                    }
+                }
+	        }
+	        catch (Exception ex)
+	        {        		
+		        throw new ExceptionDAL(ex.Message);
+	        }
+            return vListCurso;
+        }       
+
         public Curso obter(int id_curso)
         {
             Curso curso = null;
@@ -170,12 +204,28 @@ namespace DAL
 
                     parametros[0].ParameterName = "@TL_CURSO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
-                    parametros[0].Value = novo_curso.Tl_curso;
+
+                    if (novo_curso.Tl_curso == "")
+                    {
+                        parametros[0].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[0].Value = novo_curso.Tl_curso;
+                    }
                     cmd.Parameters.Add(parametros[0]);
 
                     parametros[1].ParameterName = "@DS_CURSO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
-                    parametros[1].Value = novo_curso.Ds_curso;
+
+                    if (novo_curso.Ds_curso == "")
+                    {
+                        parametros[1].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[1].Value = novo_curso.Ds_curso;
+                    }
                     cmd.Parameters.Add(parametros[1]);
 
                     parametros[2].ParameterName = "@DT_CADASTRO";
@@ -222,12 +272,28 @@ namespace DAL
 
                     parametros[1].ParameterName = "@TL_CURSO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
-                    parametros[1].Value = curso.Tl_curso;
+
+                    if (curso.Tl_curso == "")
+                    {
+                        parametros[1].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[1].Value = curso.Tl_curso;
+                    }
                     cmd.Parameters.Add(parametros[1]);
 
                     parametros[2].ParameterName = "@DS_CURSO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Varchar;
-                    parametros[2].Value = curso.Ds_curso;
+
+                    if (curso.Ds_curso == "")
+                    {
+                        parametros[2].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[2].Value = curso.Ds_curso;
+                    }
                     cmd.Parameters.Add(parametros[2]);
 
                     linhas_afetadas = cmd.ExecuteNonQuery();
@@ -281,6 +347,15 @@ namespace DAL
             curso.Tl_curso = data_reader.IsDBNull(data_reader.GetOrdinal("TL_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("TL_CURSO"));
             curso.Ds_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DS_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("DS_CURSO"));
             curso.Dt_cadastro = data_reader.IsDBNull(data_reader.GetOrdinal("DT_CADASTRO")) ? DateTime.MinValue : data_reader.GetDateTime(data_reader.GetOrdinal("DT_CADASTRO"));
+            return curso;
+        }
+        public Curso carregarCursoXAluno(NpgsqlDataReader data_reader)
+        {
+            Curso curso = new Curso();
+            curso.Tl_curso = data_reader.IsDBNull(data_reader.GetOrdinal("TL_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("TL_CURSO"));
+            curso.Ds_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DS_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("DS_CURSO"));
+            curso.Dur_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DUR_CURSO")) ? 0 : data_reader.GetInt32(data_reader.GetOrdinal("DUR_CURSO"));
+            curso.Dt_cadastro_usuario = data_reader.IsDBNull(data_reader.GetOrdinal("DT_CADASTRO")) ? DateTime.MinValue : data_reader.GetDateTime(data_reader.GetOrdinal("DT_CADASTRO"));
             return curso;
         }
     }

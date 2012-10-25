@@ -6,11 +6,18 @@ using System.Text;
 namespace Model
 {
     public class Aluno
-    {   
+    {
+        private int _id;
         private string _nome;
         private string _email;
         private string _senha;
-        private Curso _cursoCadastrado;
+        private List<Curso> _cursoCadastrado;
+        public int Id {
+            get
+            { return this._id; }
+            set
+            { this._id = value; }
+        }
         public string Nome { 
             get 
                 {return this._nome;} 
@@ -30,7 +37,7 @@ namespace Model
             set
             { this._senha = value; }
         }
-        public Curso CursoCadastrado
+        public List<Curso> CursoCadastrado
         {
             get
             { return this._cursoCadastrado; }
