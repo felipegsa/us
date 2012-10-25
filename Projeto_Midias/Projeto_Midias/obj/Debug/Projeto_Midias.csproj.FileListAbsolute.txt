@@ -106,3 +106,25 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Sof
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\Projeto_Midias\bin\tr-TR\AjaxControlToolkit.resources.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\Projeto_Midias\bin\zh-CHS\AjaxControlToolkit.resources.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\Projeto_Midias\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\Projeto_Midias.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\Projeto_Midias.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\BLL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\Model.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\Mono.Security.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\DAL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\MySql.Data.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\Npgsql.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\BLL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\DAL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\Model.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\Npgsql.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\Npgsql.xml
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\de\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\es\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\fi\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\fr\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\ja\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\bin\zh-CN\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\obj\Debug\Projeto_Midias.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\Projeto_Midias\obj\Debug\Projeto_Midias.pdb

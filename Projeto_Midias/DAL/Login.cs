@@ -8,7 +8,7 @@ namespace DAL
     public class Login
     {
         public void LogarUsuario(string email, string pass) {
-
+            
             string strCom = "Select id_usuario, email_usuario , nm_usuario , senha_usuario from usuario where email_usuario = :email_usuario and senha_usuario = :senha_usuario";
             try
             {
