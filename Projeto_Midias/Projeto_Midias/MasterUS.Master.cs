@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
+using Model.Session;
 
 namespace Projeto_Midias
 {
@@ -15,8 +16,7 @@ namespace Projeto_Midias
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblSaudacao.Text = Model.Session.Session.Aluno.Nome;
-            lblNome.Text = Model.Session.Session.Aluno.Nome;
+
         }
     }
 }

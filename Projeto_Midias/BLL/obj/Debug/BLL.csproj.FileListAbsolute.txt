@@ -76,3 +76,23 @@ C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Sof
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\BLL\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\BLL\obj\Debug\BLL.dll
 C:\Documents and Settings\felipe.sa\Desktop\Felipe\Faculdade\Universidade do Software\us\Projeto_Midias\BLL\obj\Debug\BLL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\BLL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\BLL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\DAL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\Model.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\Npgsql.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\MySql.Data.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\Mono.Security.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\Model.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\Npgsql.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\Npgsql.xml
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\DAL.pdb
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\de\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\es\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\fi\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\fr\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\ja\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\bin\Debug\zh-CN\Npgsql.resources.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\obj\Debug\BLL.dll
+C:\Users\Diego\Documents\Visual Studio 2008\Projects\us\Projeto_Midias\BLL\obj\Debug\BLL.pdb

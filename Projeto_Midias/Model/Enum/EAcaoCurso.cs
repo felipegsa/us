@@ -9,4 +9,11 @@ namespace Model.Enum
         Fazer,
         Concluido
     }
+
+    public enum Tipo_usuario
+    {
+        NONE = 0,
+        ADMINISTRADOR = 1,
+        ALUNO = 2
+    };
 }

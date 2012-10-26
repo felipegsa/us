@@ -3,31 +3,60 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Model;
+using DAL;
 
 namespace BLL
 {
     public class CursoBLL : BaseBLL<Curso>
     {
-        public List<Model.Curso> ConsultarCurso()
-        {
-            DAL.CursoDAL dalCurso = new DAL.CursoDAL();
-            List<Model.Curso> objCurso = new List<Model.Curso>();
-            objCurso = dalCurso.obter();
+        private CursoDAL curso_dal;
 
-            return objCurso;
-            //aqui se tiver alguma regra de negocio será implemtandada aqui
+        public CursoBLL()
+        {
+            this.curso_dal = new CursoDAL();
         }
 
-        public void Salvar(string pNome, string pDescricao)
+        public List<Curso> ConsultarCurso()
         {
-            DAL.CursoDAL dalCurso = new DAL.CursoDAL();
-            Curso objCurso = new Curso();            
+            // se tiver alguma regra de negocio será implemtandada aqui
+            return curso_dal.obter();
+        }
 
-            objCurso.Tl_curso = pNome;
-            objCurso.Ds_curso = pDescricao;
-            objCurso.Dt_cadastro = DateTime.Now;
-            dalCurso.salvar(objCurso);
-            //aqui se tiver alguma regra de negocio será implemtandada aqui
+        public Curso obter(int id_curso)
+        {
+            // se tiver alguma regra de negocio será implemtandada aqui
+            return curso_dal.obter(id_curso);
+        }
+
+        public List<Curso> obter(Curso curso)
+        {
+            // se tiver alguma regra de negocio será implemtandada aqui
+            // parametros suportados atualmente são Id_curso e Tl_curso
+            return curso_dal.obter(curso);
+        }
+
+        public List<Curso> obter(Usuario id_usuario)
+        {
+            // valida o id_usaurio
+            if (id_usuario.Id_usuario == 0)
+            {
+                // retorna uma lista vazia
+                return new List<Curso>();
+            }
+
+            return curso_dal.obter(id_usuario);
+        }
+
+        public int salvar(Curso novo_curso)
+        {
+            // se tiver alguma regra de negocio será implemtandada aqui
+            return curso_dal.salvar(novo_curso);
+        }
+
+        public int alterar(Curso curso)
+        {
+            // se tiver alguma regra de negocio será implemtandada aqui
+            return curso_dal.alterar(curso);
         }
     }
 }

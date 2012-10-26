@@ -7,15 +7,11 @@ using NpgsqlTypes;
 
 namespace DAL
 {
-    public class ConnectionFactory
+    public static class ConnectionFactory
     {
-        private ConnectionFactory()
-        {
-        }
-
         public static NpgsqlConnection createConnection()
         {
-            string connectionString = "Server=5.184.1.37;Port=5432;Database=universidade;User Id=postgres;Password=hxhr695684;Pooling=true;MinPoolSize=1;MaxPoolSize=30;CommandTimeout=30;ConnectionLifeTime=30;Timeout=40";
+            string connectionString = "Server=localhost;Port=5432;Database=universidade;User Id=postgres;Password=hxhr695684;Pooling=true;MinPoolSize=1;MaxPoolSize=30;CommandTimeout=30;ConnectionLifeTime=30;Timeout=40";
             NpgsqlConnection nova_conexao = null;
 
             try
@@ -24,9 +20,9 @@ namespace DAL
                 nova_conexao.Open();
                 return nova_conexao;
             }
-            catch (Exception ex)
+            catch
             {
-                return nova_conexao;
+                return null;
             }
         }
     }

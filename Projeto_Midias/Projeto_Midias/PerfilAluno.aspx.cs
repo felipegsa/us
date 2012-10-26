@@ -50,8 +50,8 @@ namespace Projeto_Midias
 
                 lblNomeCurso.Text = curso.Tl_curso;
                 lblDescricaoCurso.Text = curso.Ds_curso;
-                lblDuracaoCurso.Text = (string)curso.Dur_curso.ToString();
-                lblCadastro.Text = (string)curso.Dt_cadastro_usuario.ToString();
+                lblDuracaoCurso.Text = curso.Duracao_curso;
+                lblCadastro.Text = curso.Dt_cadastro.ToString();
                 lnkAcaoCurso.Text = "Concluido";
 
             }

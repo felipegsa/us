@@ -10,6 +10,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Collections.Generic;
 using BLL;
+using Model;
 
 namespace Projeto_Midias
 {
@@ -51,13 +52,13 @@ namespace Projeto_Midias
 
 
                
-                lblidCurso.Text = (string)curso.Id_curso.ToString();
+                lblidCurso.Text = curso.Id_curso.ToString();
                 lblNomeCurso.Text = curso.Tl_curso;
                 lblDsCurso.Text = curso.Ds_curso;
-                lblDuracaoCurso.Text = (string)curso.Dur_curso.ToString();
-                lblDataCadastro.Text = (string)curso.Dt_cadastro.ToString();
+                lblDuracaoCurso.Text = curso.Duracao_curso;
+                lblDataCadastro.Text = curso.Dt_cadastro.ToString();
                 lnkCadastrar.Text = "Cadastrar-se";
-                lnkCadastrar.CommandArgument = (string)curso.Id_curso.ToString();
+                lnkCadastrar.CommandArgument = curso.Id_curso.ToString();
 
             }
         }
@@ -67,7 +68,14 @@ namespace Projeto_Midias
             if (txtNome.Text != "" && txtDescricao.Text != "")
             {
                 CursoBLL objBLL = new CursoBLL();
-                objBLL.Salvar(txtNome.Text, txtDescricao.Text);
+                Curso novo_curso = new Curso();
+
+                // só serão inseridos os campos que até o momento a interface suporta
+                novo_curso.Tl_curso = txtNome.Text;
+                novo_curso.Ds_curso = txtDescricao.Text;
+
+                // grava o novo curso e retorna seu ID_CURSO
+                objBLL.salvar(novo_curso);
             }
             else
             {

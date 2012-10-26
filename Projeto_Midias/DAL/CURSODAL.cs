@@ -73,23 +73,6 @@ namespace DAL
                         total_parametros++;
                     }
 
-                    if (curso.Ds_curso != "")
-                    {
-                        comandoSql += "DS_CURSO LIKE '%" + curso.Ds_curso + "%' AND ";
-                        total_parametros++;
-                    }
-
-                    if (curso.Dt_cadastro != DateTime.MinValue)
-                    {
-                        string data = curso.Dt_cadastro.ToString("d");
-                        parametros[1] = new NpgsqlParameter();
-                        parametros[1].ParameterName = "@DT_CADASTRO";
-                        parametros[1].NpgsqlDbType = NpgsqlDbType.Timestamp;
-                        parametros[1].Value = DateTime.Parse(data);
-                        cmd.Parameters.Add(parametros[1]);
-                        comandoSql += "DT_CADASTRO::DATE = @DT_CADASTRO AND ";
-                    }
-
                     if (total_parametros > 0)
                     {
                         comandoSql = comandoSql.Substring(0, (comandoSql.Length - 5));
@@ -102,6 +85,44 @@ namespace DAL
                     }
 
                     cmd.CommandText = comandoSql;
+
+                    using (NpgsqlDataReader data_reader = cmd.ExecuteReader())
+                    {
+                        while (data_reader.Read())
+                        {
+                            lista.Add(carregar(data_reader));
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // neste ponto poderia ser gerado um log...
+                return lista;
+            }
+
+            return lista;
+        }
+
+        public List<Curso> obter(Usuario id_usuario)
+        {
+            List<Curso> lista = new List<Curso>();
+            string comandoSql = "SELECT C.ID_CURSO AS ID_CURSO, C.TL_CURSO AS TL_CURSO, C.DS_CURSO AS DS_CURSO, C.OBJ_CURSO AS OBJ_CURSO, C.TOPICOS_CURSO AS TOPICOS_CURSO, ";
+            comandoSql += "C.PRE_REQ_CURSO AS PRE_REQ_CURSO, C.DURACAO_CURSO AS DURACAO_CURSO, C.DT_CADASTRO AS DT_CADASTRO FROM CURSO C ";
+            comandoSql += "INNER JOIN CURSO_USUARIO CU ON CU.ID_CURSO = C.ID_CURSO ";
+            comandoSql += "WHERE CU.ID_USUARIO;";
+
+            try
+            {
+                using (NpgsqlConnection conexao = ConnectionFactory.createConnection())
+                {
+                    NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
+                    NpgsqlParameter[] parametros = new NpgsqlParameter[1];
+
+                    parametros[0].ParameterName = "@ID_USUARIO";
+                    parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
+                    parametros[0].Value = id_usuario.Id_usuario;
+                    cmd.Parameters.Add(parametros[0]);
 
                     using (NpgsqlDataReader data_reader = cmd.ExecuteReader())
                     {
@@ -193,15 +214,16 @@ namespace DAL
         public int salvar(Curso novo_curso)
         {
             int novo_id = 0;
-            string comandoSql = "SELECT inserir_curso(@TL_CURSO, @DS_CURSO, @DT_CADASTRO);";
+            string comandoSql = "SELECT inserir_curso(@TL_CURSO, @DS_CURSO, @OBJ_CURSO, @TOPICOS_CURSO, @PRE_REQ_CURSO, @DURACAO_CURSO)";
 
             try
             {
                 using (NpgsqlConnection conexao = ConnectionFactory.createConnection())
                 {
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
-                    NpgsqlParameter[] parametros = new NpgsqlParameter[3];
+                    NpgsqlParameter[] parametros = new NpgsqlParameter[6];
 
+                    // título
                     parametros[0].ParameterName = "@TL_CURSO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -215,6 +237,7 @@ namespace DAL
                     }
                     cmd.Parameters.Add(parametros[0]);
 
+                    // descrição
                     parametros[1].ParameterName = "@DS_CURSO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -228,11 +251,62 @@ namespace DAL
                     }
                     cmd.Parameters.Add(parametros[1]);
 
-                    parametros[2].ParameterName = "@DT_CADASTRO";
-                    parametros[2].NpgsqlDbType = NpgsqlDbType.Timestamp;
-                    parametros[2].Value = DateTime.Now;
+                    // objetivo
+                    parametros[2].ParameterName = "@OBJ_CURSO";
+                    parametros[2].NpgsqlDbType = NpgsqlDbType.Varchar;
+
+                    if (novo_curso.Obj_curso == "")
+                    {
+                        parametros[2].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[2].Value = novo_curso.Obj_curso;
+                    }
                     cmd.Parameters.Add(parametros[2]);
 
+                    // Tópicos
+                    parametros[3].ParameterName = "@TOPICOS_CURSO";
+                    parametros[3].NpgsqlDbType = NpgsqlDbType.Varchar;
+
+                    if (novo_curso.Topicos_curso == "")
+                    {
+                        parametros[3].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[3].Value = novo_curso.Topicos_curso;
+                    }
+                    cmd.Parameters.Add(parametros[3]);
+
+                    // Pré-requisitos
+                    parametros[4].ParameterName = "@PRE_REQ_CURSO";
+                    parametros[4].NpgsqlDbType = NpgsqlDbType.Varchar;
+
+                    if (novo_curso.Pre_req_curso == "")
+                    {
+                        parametros[4].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[4].Value = novo_curso.Pre_req_curso;
+                    }
+                    cmd.Parameters.Add(parametros[4]);
+
+                    // Duração
+                    parametros[5].ParameterName = "@DURACAO_CURSO";
+                    parametros[5].NpgsqlDbType = NpgsqlDbType.Varchar;
+
+                    if (novo_curso.Duracao_curso == "")
+                    {
+                        parametros[5].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[5].Value = novo_curso.Duracao_curso;
+                    }
+                    cmd.Parameters.Add(parametros[5]);
+                    
                     using (NpgsqlDataReader data_reader = cmd.ExecuteReader())
                     {
                         if (data_reader.Read())
@@ -251,10 +325,11 @@ namespace DAL
             return novo_id;
         }
 
+        // o update irá atualizar todos os campos do curso. O ID_CURSO é parâmetro obrigatório
         public int alterar(Curso curso)
         {
             int linhas_afetadas = 0;
-            string comandoSql = "UPDATE CURSO SET TL_CURSO = @TL_CURSO, DS_CURSO = @DS_CURSO ";
+            string comandoSql = "UPDATE CURSO SET TL_CURSO = @TL_CURSO, DS_CURSO = @DS_CURSO, OBJ_CURSO = @OBJ_CURSO, TOPICOS_CURSO = @TOPICOS_CURSO, PRE_REQ_CURSO = @PRE_REQ_CURSO, DURACAO_CURSO = @DURACAO_CURSO ";
             comandoSql += "WHERE ID_CURSO = @ID_CURSO;";
 
             try
@@ -262,40 +337,99 @@ namespace DAL
                 using (NpgsqlConnection conexao = ConnectionFactory.createConnection())
                 {
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
-                    NpgsqlParameter[] parametros = new NpgsqlParameter[3];
+                    NpgsqlParameter[] parametros = new NpgsqlParameter[7];
 
-                    // para update id_curso é parâmetro obrigatório
-                    parametros[0].ParameterName = "@ID_CURSO";
-                    parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
-                    parametros[0].Value = curso.Id_curso;
-                    cmd.Parameters.Add(parametros[0]);
-
-                    parametros[1].ParameterName = "@TL_CURSO";
-                    parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
+                    // título
+                    parametros[0].ParameterName = "@TL_CURSO";
+                    parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
 
                     if (curso.Tl_curso == "")
+                    {
+                        parametros[0].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[0].Value = curso.Tl_curso;
+                    }
+                    cmd.Parameters.Add(parametros[0]);
+
+                    // descrição
+                    parametros[1].ParameterName = "@DS_CURSO";
+                    parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
+
+                    if (curso.Ds_curso == "")
                     {
                         parametros[1].Value = DBNull.Value;
                     }
                     else
                     {
-                        parametros[1].Value = curso.Tl_curso;
+                        parametros[1].Value = curso.Ds_curso;
                     }
                     cmd.Parameters.Add(parametros[1]);
 
-                    parametros[2].ParameterName = "@DS_CURSO";
+                    // objetivo
+                    parametros[2].ParameterName = "@OBJ_CURSO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Varchar;
 
-                    if (curso.Ds_curso == "")
+                    if (curso.Obj_curso == "")
                     {
                         parametros[2].Value = DBNull.Value;
                     }
                     else
                     {
-                        parametros[2].Value = curso.Ds_curso;
+                        parametros[2].Value = curso.Obj_curso;
                     }
                     cmd.Parameters.Add(parametros[2]);
 
+                    // Tópicos
+                    parametros[3].ParameterName = "@TOPICOS_CURSO";
+                    parametros[3].NpgsqlDbType = NpgsqlDbType.Varchar;
+
+                    if (curso.Topicos_curso == "")
+                    {
+                        parametros[3].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[3].Value = curso.Topicos_curso;
+                    }
+                    cmd.Parameters.Add(parametros[3]);
+
+                    // Pré-requisitos
+                    parametros[4].ParameterName = "@PRE_REQ_CURSO";
+                    parametros[4].NpgsqlDbType = NpgsqlDbType.Varchar;
+
+                    if (curso.Pre_req_curso == "")
+                    {
+                        parametros[4].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[4].Value = curso.Pre_req_curso;
+                    }
+                    cmd.Parameters.Add(parametros[4]);
+
+                    // Duração
+                    parametros[5].ParameterName = "@DURACAO_CURSO";
+                    parametros[5].NpgsqlDbType = NpgsqlDbType.Varchar;
+
+                    if (curso.Duracao_curso == "")
+                    {
+                        parametros[5].Value = DBNull.Value;
+                    }
+                    else
+                    {
+                        parametros[5].Value = curso.Duracao_curso;
+                    }
+                    cmd.Parameters.Add(parametros[5]);
+
+                    // para update id_curso é parâmetro obrigatório
+                    parametros[6].ParameterName = "@ID_CURSO";
+                    parametros[6].NpgsqlDbType = NpgsqlDbType.Integer;
+                    parametros[6].Value = curso.Id_curso;
+                    cmd.Parameters.Add(parametros[6]);
+
+                    // executa a instrução SQL
                     linhas_afetadas = cmd.ExecuteNonQuery();
                 }
             }
@@ -311,9 +445,11 @@ namespace DAL
         public int excluir(int id_curso)
         {
             int linhas_afetadas = 0;
-            string comandoSql = "DELETE FROM USUARIO_CURSO WHERE ID_CURSO = @ID_CURSO ";
-            comandoSql += "DELETE FROM AULA WHERE ID_CURSO = @ID_CURSO ";
-            comandoSql += "DELETE FROM QUESTAO WHERE ID_CURSO = @ID_CURSO ";
+
+            // DROP CASCADED
+            string comandoSql = "DELETE FROM USUARIO_CURSO WHERE ID_CURSO = @ID_CURSO; ";
+            comandoSql += "DELETE FROM AULA WHERE ID_CURSO = @ID_CURSO; ";
+            comandoSql += "DELETE FROM QUESTAO WHERE ID_CURSO = @ID_CURSO; ";
             comandoSql += "DELETE FROM CURSO WHERE ID_CURSO = @ID_CURSO;";
 
             try
@@ -346,6 +482,10 @@ namespace DAL
             curso.Id_curso = data_reader.IsDBNull(data_reader.GetOrdinal("ID_CURSO")) ? 0 : data_reader.GetInt32(data_reader.GetOrdinal("ID_CURSO"));
             curso.Tl_curso = data_reader.IsDBNull(data_reader.GetOrdinal("TL_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("TL_CURSO"));
             curso.Ds_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DS_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("DS_CURSO"));
+            curso.Obj_curso = data_reader.IsDBNull(data_reader.GetOrdinal("OBJ_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("OBJ_CURSO"));
+            curso.Topicos_curso = data_reader.IsDBNull(data_reader.GetOrdinal("TOPICOS_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("TOPICOS_CURSO"));
+            curso.Pre_req_curso = data_reader.IsDBNull(data_reader.GetOrdinal("PRE_REQ_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("PRE_REQ_CURSO"));
+            curso.Duracao_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DURACAO_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("DURACAO_CURSO"));
             curso.Dt_cadastro = data_reader.IsDBNull(data_reader.GetOrdinal("DT_CADASTRO")) ? DateTime.MinValue : data_reader.GetDateTime(data_reader.GetOrdinal("DT_CADASTRO"));
             return curso;
         }
@@ -354,8 +494,8 @@ namespace DAL
             Curso curso = new Curso();
             curso.Tl_curso = data_reader.IsDBNull(data_reader.GetOrdinal("TL_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("TL_CURSO"));
             curso.Ds_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DS_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("DS_CURSO"));
-            curso.Dur_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DUR_CURSO")) ? 0 : data_reader.GetInt32(data_reader.GetOrdinal("DUR_CURSO"));
-            curso.Dt_cadastro_usuario = data_reader.IsDBNull(data_reader.GetOrdinal("DT_CADASTRO")) ? DateTime.MinValue : data_reader.GetDateTime(data_reader.GetOrdinal("DT_CADASTRO"));
+            curso.Duracao_curso = data_reader.IsDBNull(data_reader.GetOrdinal("DUR_CURSO")) ? "" : data_reader.GetString(data_reader.GetOrdinal("DUR_CURSO"));
+            curso.Dt_cadastro = data_reader.IsDBNull(data_reader.GetOrdinal("DT_CADASTRO")) ? DateTime.MinValue : data_reader.GetDateTime(data_reader.GetOrdinal("DT_CADASTRO"));
             return curso;
         }
     }

@@ -23,7 +23,6 @@ namespace Projeto_Midias
             try
             {
                 BLL.Login bllLogin = new BLL.Login();
-                Boolean result = false;
                 bllLogin.LogarUsuario(txtLogin.Text, txtPass.Text);              
                 Response.Redirect("PerfilAluno.aspx?Nome=" + txtLogin.Text);
             }
@@ -31,7 +30,6 @@ namespace Projeto_Midias
             {
                 
             }
-           
         }
     }
 }
