@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background-image:url(../images/fundo.jpg); background-repeat:repeat-x;}
+
+#corpo{ width:960px; min-height:700px; position:relative; margin:auto; clear:both;}
+
+#topo{ width:960px; min-height:400px; position:relative;}
+
+.logo{ width:267px; height:79px; position:relative; text-indent:-10000px;background-image:url(../images/logo.png); background-repeat:no-repeat; margin-top:10px;}
+
+#btn-login{width:239px;height:49px;background-image:url(../images/img-area-restrita.jpg);background-repeat:no-repeat;position:absolute;left: 699px;top: 25px; cursor:pointer;}
+#btn-login p{ width:200px; color:#FFF; font-size:x-small;	font-weight:bold;	text-align:center;	text-transform:uppercase;	font-family:Arial, Helvetica, sans-serif; margin-top:5px; margin-left:30px;;}
+#btn-login a{ color:#FFF;font-size:x-small;	font-weight:bold;	text-align:center;	text-transform:uppercase;	font-family:Arial, Helvetica, sans-serif;}
+
+#login{width:313px;height:144px;position:absolute;left: 627px;top: 0px;background-image:url(../images/fundo-login.png);background-repeat:no-repeat; z-index:3000; display:none;}
+#login .txt-login{position:absolute;color:#DC6938;font-family:Arial, Helvetica, sans-serif;font-size:x-small;top: 118px;left: 9px;}
+#login span{color:#666;position:absolute;left: 13px;font-family:Arial, Helvetica, sans-serif;font-size:small;top: 2px;}
+#login #btn-fechar-login{position:absolute;color:#DC6938;font-family:Arial, Helvetica, sans-serif;font-size:small;font-weight:100;float:right;left: 242px;top: 5px;width: 71px;cursor:pointer;}
+#login #btn-fechar-login a{olor:#DC6938;font-family:Arial, Helvetica, sans-serif;font-size:x-small;font-weight:bold;}
+
+#login #nm-aluno{position:absolute;top: 38px;left: 23px; color:#666; font-family:Arial, Helvetica, sans-serif; font-size:small;}
+#login #aluno{position:absolute;top: 36px;left: 1px;}
+#login #nm-professor{position:absolute;top: 38px;left: 151px;color:#666; font-family:Arial, Helvetica, sans-serif; font-size:small;}
+#login #professor{position:absolute;top: 36px;left: 130px;}
+#login #nm-login{position:absolute;top: 66px;left: 11px;color:#666; font-family:Arial, Helvetica, sans-serif; font-size:small;}
+#login #input-login{position:absolute;top: 90px;width: 120px;left: 8px;}
+#login #nm-senha{position:absolute;top: 66px;left: 145px;color:#666; font-family:Arial, Helvetica, sans-serif; font-size:small;}
+#login #input-senha{position:absolute;top: 90px;left: 144px;width: 120px;}
+#login #input-ok{position:absolute;top: 90px;left: 275px;}
+
+/* MENU PRINCIPAL DO SITE */
+#menu{ width:960px; height:58px; position:relative; background-image:url(../images/fundo-menu.png); background-repeat:no-repeat; z-index:2000; margin-top:10px;}
+#menu ul{ width:960px; position:relative;}
+#menu li{ width:189px; height:45px; float:left; display:block; border-right:; line-height:45px; color:#FFF; list-style:none; margin-left:0px; margin-right:0px; text-align:center; text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold;}
+#menu .separa-menu{ width:3px; height:45px; background-image:url(../images/separa-menu.jpg);}
+#menu a{width:189px; height:45px; display:block; color:#FFF; text-decoration:none;}
+#menu a:hover{width:189px; height:45px; display:block; background-color:#244989; color:#FFF; text-decoration:none;}
+/* /- MENU PRINCIPAL DO SITE */
+#banner{ width:930px; height:337px; background-image:url(../images/fundo-banner-transparente.png);margin-left:8px; z-index:1000; margin-top:-13px; }
+#banner .rodape-banner{width:930px; height:89px; background-image:url(../images/fundo-banner.png); background-repeat:repeat; margin-top:-120px; z-index:1000;}
+
+#conteudo{ width:940px; min-height:550px; position:relative; margin-bottom:25px; clear:both;}
+#conteudo h1{ width:930px; height:34px; position:relative; background-image:url(../images/fundo-pg.png); background-repeat:no-repeat; margin-top:25px; margin-bottom:10px; color:#FFF; text-indent:45px; line-height:34px; text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; font-size:small; font-weight:bold;}
+
+/* MENU LATERAL DO SITE */
+#menu-lateral{ width:190px;; height:auto; position:relative; float:left; margin-top:25px; margin-bottom:20px;}
+#menu-lateral ul{ width:190px; height:auto;}
+#menu-lateral li{ width:190px; height:22px; background-image:url(../images/fundo-menu-lateral.jpg); background-repeat:no-repeat; display:block; list-style:none; font-family:Arial, Helvetica, sans-serif; font-size:small; color:#FFF; line-height:22px; text-indent:28px;}
+#menu-lateral a{ width:190px; height:22px;list-style:none; font-family:Arial, Helvetica, sans-serif; font-size:small; color:#FFF; text-indent:28px; display:block; text-decoration:none;}
+#menu-lateral a:hover{ width:190px; height:22px;list-style:none; font-family:Arial, Helvetica, sans-serif; font-size:small; color:#FFF; text-indent:28px; display:block; text-decoration:none; background-image:url(../images/fundo-menu-lateral-ativo.jpg); background-repeat:no-repeat;}
+#menu-ativo{width:190px; height:22px;list-style:none; font-family:Arial, Helvetica, sans-serif; font-size:small; color:#FFF; text-indent:28px; display:block; text-decoration:none; background-image:url(../images/fundo-menu-lateral-ativo.jpg); background-repeat:no-repeat;}
+
+/* /- MENU LATERAL DO SITE */
+
+/* DIV MEIO DO SITE - CURSOS */
+#meio{ width:515px; height:auto; position:relative; float:left; margin-top:25px; margin-left:10px;}
+#meio-img{width:200px; height:250px; position:relative; float:left; margin-top:25px; margin-left:10px;}
+#meio p{ width:515px; height:auto; margin-left:5px; font-size:small; color:#666; margin-top:5px; text-align:justify;}
+#insc-gratis{ width:200px; height:26px; position:relative; display:block; background-image:url(../images/img-inscricao.jpg); background-repeat:no-repeat; margin-top:25px; color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:small; line-height:26px; text-align:center;}
+#insc-gratis a{width:200px; height:26px; position:relative; display:block;color:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:small; line-height:26px; text-align:center; text-decoration:none;}
+#insc-gratis a:hover{width:200px; height:26px; position:relative; display:block;color:#CCC; font-family:Arial, Helvetica, sans-serif; font-size:small; line-height:26px; text-align:center; text-decoration:none;}
+/* /- DIV MEIO DO SITE - CONTEUDO */
+
+/* DIV PORTAL - PAGINA PORTAL - HISTORIA_ MISSAO_VALORES_ VISAO E ATENDIMENTO*/
+#meio-portal{width:715px; height:auto; position:relative; float:left; margin-top:25px; margin-left:10px;}
+#conteudo #meio-portal p{width:715px;height:auto;margin-left:5px;font-size:small;color:#666;margin-top:5px;text-align:justify;}
+#meio-portal ul{}
+#meio-portal li{font-size:small; color:#666; font-size:small; list-style:decimal; margin-left:15px;}
+
+/* DIV PAGINA COLABORADORES */
+#meio-colaboradores{width:930px; height:auto; position:relative; float:left; margin-top:5px; margin-left:10px;}
+#meio-colaboradores #bloco{ width:420px;height:150px; position:relative; float:left;margin-left:30px; margin-top:15px;}
+#meio-colaboradores #foto{ width:100px; height:100px; position:relative; float:left;}
+#meio-colaboradores #info-colaborador{ width:290px; height:auto; position:relative; float:left;}
+#meio-colaboradores span{ text-transform:uppercase; color:#999; font-size:x-larger; margin-left:10px;}
+#meio-colaboradores p{ width:290px; margin-left:10px; margin-top:5px; font-size:x-small; color:#666; font-family:Arial, Helvetica, sans-serif; text-align:justify;}
+#meio-colaboradores #pdf{width:150px;height:20px;position:relative;background-image:url(../images/img-pdf.png);background-repeat:no-repeat;	margin-left:9px;line-height:20px;color:#06F;font-family:Arial, Helvetica, sans-serif;font-size:x-small;text-indent:18px;font-weight:bold;margin-top:5px; display:block;}
+#meio-colaboradores #pdf a{width:150px;height:20px;position:relative;display:block;font-family:Arial, Helvetica, sans-serif;font-size:x-small;color:#06F; text-decoration:none;}
+
+/* HOME - DESTAQUES */
+#destaques-cursos{ width:696px; height:auto; position:relative; float:left; margin-top:25px; margin-left:8px; margin-bottom:15px;}
+#conteudo #destaques-cursos h1{ width:694px; height:34px; position:relative; background-image:url(../images/fundo-titulo.jpg); background-repeat:no-repeat; margin-top:10px; margin-bottom:10px; color:#FFF; text-indent:45px; line-height:34px; text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; font-size:small; font-weight:bold;}
+#conteudo #destaques-cursos .bloco-home{ width:300px; height:110px; position:relative; float:left; margin-left:30px; margin-bottom:15px;}
+#conteudo #destaques-cursos .bloco-home h2{position:absolute;color:#999;font-size:large;left: 122px;top: 4px;}
+#conteudo #destaques-cursos .bloco-home img{position:absolute;top: 12px;}
+#conteudo #destaques-cursos .bloco-home p{width:210px;position:absolute;font-family:Arial, Helvetica, sans-serif; text-align:justify;font-size:x-small;color:#333; line-height:15px;}
+#conteudo #destaques-cursos .bloco-home a{width:176px;position:absolute;font-family:Arial, Helvetica, sans-serif;text-align:justify;font-size:x-small;color:#333;text-decoration:none;left: 120px;top: 27px;}
+#conteudo #destaques-cursos .bloco-home a:hover{width:176px;position:absolute;font-family:Arial, Helvetica, sans-serif; text-align:justify;font-size:x-small;color:#333; text-decoration:underline;}
+/* /HOME - DESTAQUES */
+
+/* COLABORADORES */
+#colaboradores{width:217px; min-height:310px; float:right; margin-top:25px;margin-bottom:15px;}
+#conteudo #colaboradores h2{width:215px; height:34px; position:relative; background-image:url(../images/fundo-colaboradores.jpg); background-repeat:no-repeat; margin-top:12px; margin-bottom:10px; color:#FFF; text-indent:15px; line-height:28px; text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; font-size:small; font-weight:bold;}
+#conteudo #colaboradores img{position:absolute;left: 748px;top: 120px;}
+#conteudo #colaboradores p{width:189px;position:absolute;font-family:Arial, Helvetica, sans-serif;text-align:justify;font-size:x-small;color:#333;	line-height:15px;left: 739px;top: 247px;}
+#conteudo #colaboradores span{position:absolute;color:#999;font-size:large;left: 763px;top: 84px;}
+/* /-COLABORADORES */
+
+/* DEPOIMENTOS */
+#conteudo #depo{ width:696px; min-height:200px; position:relative; float:left;margin-left:8px; clear:both;}
+#conteudo #depo h1{ width:694px; height:34px; position:relative; background-image:url(../images/fundo-titulo.jpg); background-repeat:no-repeat; margin-top:10px; margin-bottom:10px; color:#FFF; text-indent:45px; line-height:34px; text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; font-size:small; font-weight:bold;}
+#conteudo #depo #txt{ width:500px; position:relative; margin-left:180px; margin-top:30px;}
+#conteudo #depo span{text-align:right;color:#036;font-style:italic;font-weight:bold;font-size:x-small;position:absolute;left: 324px;top: 84px;width: 158px;height: 29px;}
+#conteudo #depo img{position:absolute;left: 9px;top: 68px;}
+#conteudo #depo .txt-depo{ width:450px; position:relative;font-family:Arial, Helvetica, sans-serif; font-size:x-small; font-weight:bold; color:#666; font-style:italic; text-align:justify; margin-left:30px; margin-right:30px; margin-top:25px;}
+#conteudo #depo #aspas1{ width:27px; height:20px; position:absolute; background-image:url(../images/aspas1.png); background-repeat:no-repeat;}
+#conteudo #depo #aspas2{width:27px;height:20px;position:absolute;background-image:url(../images/aspas2.png);background-repeat:no-repeat;left: 392px;top: 48px;}
+/* /- DEPOIMENTOS */
+
+/*ALUNO DO MES */
+#aluno-mes{width:217px; min-height:200px; float:right; position:relative; }
+#conteudo #aluno-mes p{width:107px;position:absolute;font-family:Arial, Helvetica, sans-serif;text-align:justify;font-size:x-small;color:#333;line-height:15px;top: 536px;left: 780px;}
+#conteudo #aluno-mes span{position:absolute;font-family:Arial, Helvetica, sans-serif;text-align:center;font-size:x-small;color:#333;line-height:15px;left: 60px;top: 169px;}
+#conteudo #aluno-mes img{position:absolute;left: 22px;top: 54px;}
+#conteudo #aluno-mes h3{width:215px; height:34px; position:relative; background-image:url(../images/fundo-aluno-mes.jpg); background-repeat:no-repeat; margin-top:12px; margin-bottom:10px; color:#FFF; text-indent:15px; line-height:28px; text-transform:uppercase; font-family:Arial, Helvetica, sans-serif; font-size:small; font-weight:bold; clear:both;}
+/* /- ALUNO DO MES */
+
+/*XXXXXXXXXXXXXXXXX  FORMULARIO XXXXXXXXXXXXXXXXX */
+#conteudo #meio-portal .fomr-p{ width:500px; font-size:small;color:#666;margin-top:5px;text-align:justify; margin-left:15px;}
+#contato_form{height:350px;}
+#conteudo #contato_form fieldset{border:none; width:400px; height:200px; position:relative; margin-top:20px;}
+#conteudo #contato_form label{color:#999; display:block; float:left; font-family:Arial, Helvetica, sans-serif; font-size:small; margin:5px; min-height:30px; position:relative; width:400px; *margin-top:-15px; line-height:30px; *line-height:10px; font-weight:bold;}
+#conteudo #contato_form input,select{background-color:#FFF;border:#CCC 1px solid;color:#352B23;display:block;position:absolute;font-family:Tahoma, Geneva, sans-serif;	font-weight:700;top: 3px;left: 95px;width: 312px;}
+#conteudo #contato_form input:focus{border:#999 1px solid;}
+#conteudo #contato_form .enviar{ width:100px; cursor:pointer;display:block;height:30px;left:310px;top:100px;line-height:30px;position:absolute;}
+#conteudo #contato_form textarea{background-color:#FFF;border:#CCC 1px solid;display:block;height:100px;width:310px;position:absolute;font-family:Arial, Helvetica, sans-serif;font-size:small;font-weight:bold;color:#352B23;top: 10px;left: 95px;}
+#conteudo #contato_form .obrigatorio{position:absolute;color:#999;font-family:Arial, Helvetica, sans-serif;font-size:x-small;left: 98px;top: 288px;}
+#contato_form img{position:absolute;left: 570px;top: -18px;}
+/*XXXXXXXXXXXXXXXXX  FORMULARIO XXXXXXXXXXXXXXXXX */
+
+/* RODAPE */
+#rodape{ width:100%; height:50px; background-color:#39404B; position:relative; clear:both;}
+#rodape p{ text-align:center; color:#FFF; font-size:small; font-family:Arial, Helvetica, sans-serif; line-height:50px;}
+#rodape .facebook{position:absolute;left: 947px;top: 11px;}
+#rodape .twitter{position:absolute;left: 985px;top: 11px;}
+
+/* /- RODAPE */
