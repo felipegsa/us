@@ -51,6 +51,8 @@
     <Compile Include="Curso.cs" />
     <Compile Include="Enum\EAcaoCurso.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questao.cs" />
+    <Compile Include="Resposta.cs" />
     <Compile Include="Session\Session.cs">
     </Compile>
     <Compile Include="Usuario.cs" />
