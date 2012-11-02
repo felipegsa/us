@@ -14,6 +14,13 @@ namespace Model.Session
             get { return (Aluno)HttpContext.Current.Session["Aluno"]; }
             set { HttpContext.Current.Session["Aluno"] = value; }
         }
+
+        public static Curso Curso
+        {
+            get { return (Curso)HttpContext.Current.Session["Curso"]; }
+            set { HttpContext.Current.Session["Curso"] = value; }
+        }
+
     }
 }
  

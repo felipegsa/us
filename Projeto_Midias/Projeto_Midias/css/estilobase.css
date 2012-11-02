@@ -10,7 +10,7 @@ body
 	font: normal 11px Tahoma, Verdana, Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
-	background:url(../../img/adm/layout/gradient.jpg) #ededed repeat-x;
+	background:url(../img/adm/layout/gradient.jpg) #ededed repeat-x;
 	padding:5px;
 }
 
@@ -96,7 +96,7 @@ color: #fff;
 	display: block;
 	height: 90px;
 	width: 330px;
-	background:url(../../img/adm/layout/logo.png);
+	background:url(../../images/logo.png);
 	background-repeat:no-repeat;
 	text-indent:-6000px;
 }
@@ -267,7 +267,7 @@ color: #fff;
 	display:block;
 	width:85px;
 	height:23px;
-	background:url(../../img/adm/layout/fundo-btn-menu-principal.gif);
+	background:url(../img/adm/layout/fundo-btn-menu-principal.gif);
 	text-decoration:none;
 	color:#000000;
 	border:1px solid #DDDDDD;
@@ -301,7 +301,7 @@ color: #fff;
 	display:block;
 	width:85px;
 	height:23px;
-	background:url(../../img/adm/layout/fundo-btn-menu-principal.gif);
+	background:url(../img/adm/layout/fundo-btn-menu-principal.gif);
 	text-decoration:none;
 	color:#fff;
 	border:1px solid #E13300;

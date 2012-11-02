@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+.caixa table
+{
+	width:100%;
+	border-collapse: separate;
+	border-spacing: 3px;
+}
+
+.campos_formulario
+{
+	width:592px;
+}
+
+.caixa_especial .titulo_terceiro
+{
+	text-align:center;
+}
+
+/* ULTIMOS PRODUTOS CADASTRADOS */
+.ultimos_produtos
+{
+	margin-bottom:10px;
+}
+
+.ultimos_produtos h3
+{
+	color:#05386D;
+}
+
+.ultimos_produtos .img
+{
+	width:110px;
+	height:97px;
+	display:block;
+	margin:auto;
+	border:1px solid #05386D;
+}
+
+.ultimos_produtos p
+{
+	text-align:center;
+	color:#05386D;
+	padding:5px;
+}
+
+.menu_principal li{width:83px; margin-right:5px;}
+.btn_menu_principal{width:83px; margin-right:0;}
+.btn_menu_principal a{width:83px;}
+
+.btn_menu_principal_precionado{width:83px;}
+.btn_menu_principal_precionado a{width:83px;}
+
+
+.btn_menu_sair{width:65px;}
+.btn_menu_sair a{width:65px;}

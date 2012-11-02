@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Npgsql;
+using NpgsqlTypes;
+
+namespace DAL
+{
+    public static class ConnectionFactory
+    {
+        public static NpgsqlConnection createConnection()
+        {
+            string connectionString = "Server=localhost;Port=5432;Database=universidade;User Id=postgres;Password=hxhr695684;Pooling=true;MinPoolSize=1;MaxPoolSize=30;CommandTimeout=30;ConnectionLifeTime=30;Timeout=40";
+            NpgsqlConnection nova_conexao = null;
+
+            try
+            {
+                nova_conexao = new NpgsqlConnection(connectionString);
+                nova_conexao.Open();
+                return nova_conexao;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+    }
+}

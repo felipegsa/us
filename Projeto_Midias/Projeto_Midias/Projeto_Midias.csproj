@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{22C06AE9-5107-4F9B-83DE-035F1E8E7927}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -69,51 +69,51 @@
     <Content Include="css\jquery.fancybox.css" />
     <Content Include="css\login.css" />
     <Content Include="css\reset.css" />
-    <Content Include="Default.aspx" />
-    <Content Include="img\adm\icones-adm\box.png" />
-    <Content Include="img\adm\icones-adm\camera.png" />
-    <Content Include="img\adm\icones-adm\cancel.png" />
-    <Content Include="img\adm\icones-adm\delete.png" />
-    <Content Include="img\adm\icones-adm\export.png" />
-    <Content Include="img\adm\icones-adm\help.png" />
-    <Content Include="img\adm\icones-adm\legenda-status-pedidos.png" />
-    <Content Include="img\adm\icones-adm\ok.png" />
-    <Content Include="img\adm\icones-adm\photo.png" />
-    <Content Include="img\adm\icones-adm\plus.png" />
-    <Content Include="img\adm\icones-adm\send.png" />
-    <Content Include="img\adm\icones-adm\star.png" />
-    <Content Include="img\adm\icones-adm\system.png" />
-    <Content Include="img\adm\icones-adm\thumb-ok.png" />
-    <Content Include="img\adm\icones-adm\update.png" />
-    <Content Include="img\adm\icones-adm\warning.png" />
-    <Content Include="img\adm\icones-adm\zoom.png" />
-    <Content Include="img\adm\icones-adm\zoom_star.png" />
-    <Content Include="img\adm\layout\favicon.ico" />
-    <Content Include="img\adm\layout\fundo-btn-menu-principal.gif" />
-    <Content Include="img\adm\layout\gradient.jpg" />
-    <Content Include="img\adm\layout\logo-adm.png" />
-    <Content Include="img\adm\layout\logo-plataforma.png" />
-    <Content Include="img\adm\layout\logo-universidade.png" />
-    <Content Include="img\adm\layout\logo.png" />
-    <Content Include="img\adm\layout\logo1.png" />
-    <Content Include="img\fancybox\blank.gif" />
-    <Content Include="img\fancybox\fancybox_buttons.png" />
-    <Content Include="img\fancybox\fancybox_loading.gif" />
-    <Content Include="img\fancybox\fancybox_sprite.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
-    <Content Include="img\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
-    <Content Include="img\ui-lightness\images\ui-icons_222222_256x240.png" />
-    <Content Include="img\ui-lightness\images\ui-icons_228ef1_256x240.png" />
-    <Content Include="img\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
-    <Content Include="img\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
-    <Content Include="img\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="ADM\Default.aspx" />
+    <Content Include="ADM\img\adm\icones-adm\box.png" />
+    <Content Include="ADM\img\adm\icones-adm\camera.png" />
+    <Content Include="ADM\img\adm\icones-adm\cancel.png" />
+    <Content Include="ADM\img\adm\icones-adm\delete.png" />
+    <Content Include="ADM\img\adm\icones-adm\export.png" />
+    <Content Include="ADM\img\adm\icones-adm\help.png" />
+    <Content Include="ADM\img\adm\icones-adm\legenda-status-pedidos.png" />
+    <Content Include="ADM\img\adm\icones-adm\ok.png" />
+    <Content Include="ADM\img\adm\icones-adm\photo.png" />
+    <Content Include="ADM\img\adm\icones-adm\plus.png" />
+    <Content Include="ADM\img\adm\icones-adm\send.png" />
+    <Content Include="ADM\img\adm\icones-adm\star.png" />
+    <Content Include="ADM\img\adm\icones-adm\system.png" />
+    <Content Include="ADM\img\adm\icones-adm\thumb-ok.png" />
+    <Content Include="ADM\img\adm\icones-adm\update.png" />
+    <Content Include="ADM\img\adm\icones-adm\warning.png" />
+    <Content Include="ADM\img\adm\icones-adm\zoom.png" />
+    <Content Include="ADM\img\adm\icones-adm\zoom_star.png" />
+    <Content Include="ADM\img\adm\layout\favicon.ico" />
+    <Content Include="ADM\img\adm\layout\fundo-btn-menu-principal.gif" />
+    <Content Include="ADM\img\adm\layout\gradient.jpg" />
+    <Content Include="ADM\img\adm\layout\logo-adm.png" />
+    <Content Include="ADM\img\adm\layout\logo-plataforma.png" />
+    <Content Include="ADM\img\adm\layout\logo-universidade.png" />
+    <Content Include="ADM\img\adm\layout\logo.png" />
+    <Content Include="ADM\img\adm\layout\logo1.png" />
+    <Content Include="ADM\img\fancybox\blank.gif" />
+    <Content Include="ADM\img\fancybox\fancybox_buttons.png" />
+    <Content Include="ADM\img\fancybox\fancybox_loading.gif" />
+    <Content Include="ADM\img\fancybox\fancybox_sprite.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="ADM\img\ui-lightness\images\ui-icons_ffffff_256x240.png" />
     <Content Include="js\adm\banners.js" />
     <Content Include="js\adm\cadastrar-cliente.js" />
     <Content Include="js\adm\cadastrar-produto.js" />
@@ -148,64 +148,131 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cursos.aspx.cs">
-      <DependentUpon>Cursos.aspx</DependentUpon>
+    <Compile Include="ADM\Adm_Cursos.aspx.cs">
+      <DependentUpon>Adm_Cursos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Cursos.aspx.designer.cs">
-      <DependentUpon>Cursos.aspx</DependentUpon>
+    <Compile Include="ADM\Adm_Cursos.aspx.designer.cs">
+      <DependentUpon>Adm_Cursos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DadosAluno.aspx.cs">
+    <Compile Include="valores.aspx.cs">
+      <DependentUpon>valores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="valores.aspx.designer.cs">
+      <DependentUpon>valores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visao.aspx.cs">
+      <DependentUpon>visao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visao.aspx.designer.cs">
+      <DependentUpon>visao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="atendimento.aspx.cs">
+      <DependentUpon>atendimento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="atendimento.aspx.designer.cs">
+      <DependentUpon>atendimento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="colaboradores.aspx.cs">
+      <DependentUpon>colaboradores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="colaboradores.aspx.designer.cs">
+      <DependentUpon>colaboradores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADM\DadosAluno.aspx.cs">
       <DependentUpon>DadosAluno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="DadosAluno.aspx.designer.cs">
+    <Compile Include="ADM\DadosAluno.aspx.designer.cs">
       <DependentUpon>DadosAluno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="ADM\Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
+    <Compile Include="ADM\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Jogos.aspx.cs">
+    <Compile Include="cursos.aspx.cs">
+      <DependentUpon>cursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cursos.aspx.designer.cs">
+      <DependentUpon>cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADM\Jogos.aspx.cs">
       <DependentUpon>Jogos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Jogos.aspx.designer.cs">
+    <Compile Include="ADM\Jogos.aspx.designer.cs">
       <DependentUpon>Jogos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MasterUS.Master.cs">
+    <Compile Include="ADM\MasterUS.Master.cs">
       <DependentUpon>MasterUS.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MasterUS.Master.designer.cs">
+    <Compile Include="ADM\MasterUS.Master.designer.cs">
       <DependentUpon>MasterUS.Master</DependentUpon>
+    </Compile>
+    <Compile Include="missao.aspx.cs">
+      <DependentUpon>missao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="missao.aspx.designer.cs">
+      <DependentUpon>missao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal.aspx.cs">
+      <DependentUpon>portal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal.aspx.designer.cs">
+      <DependentUpon>portal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PerfilAluno.aspx.cs">
+    <Compile Include="ADM\PerfilAluno.aspx.cs">
       <DependentUpon>PerfilAluno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="PerfilAluno.aspx.designer.cs">
+    <Compile Include="ADM\PerfilAluno.aspx.designer.cs">
       <DependentUpon>PerfilAluno.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
+    <Compile Include="ADM\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
+    <Compile Include="ADM\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Cursos.aspx" />
-    <Content Include="DadosAluno.aspx" />
-    <Content Include="Jogos.aspx" />
-    <Content Include="MasterUS.Master" />
-    <Content Include="PerfilAluno.aspx" />
-    <Content Include="Login.aspx" />
+    <Content Include="ADM\Adm_Cursos.aspx" />
+    <Content Include="valores.aspx" />
+    <Content Include="visao.aspx" />
+    <Content Include="atendimento.aspx" />
+    <Content Include="colaboradores.aspx" />
+    <Content Include="css\default.css" />
+    <Content Include="css\estilo-base.css" />
+    <Content Include="css\nivo-slider.css" />
+    <Content Include="ADM\DadosAluno.aspx" />
+    <Content Include="cursos.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="ADM\Jogos.aspx" />
+    <Content Include="ADM\MasterUS.Master" />
+    <Content Include="missao.aspx" />
+    <Content Include="ADM\PerfilAluno.aspx" />
+    <Content Include="ADM\Login.aspx" />
+    <Content Include="portal.aspx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">
@@ -247,9 +314,6 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

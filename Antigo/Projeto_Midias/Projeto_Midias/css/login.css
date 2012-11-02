@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ------------------------------ LOGIN ------------------------------ */
+.login{
+	margin: 20px auto 5px auto;
+	padding: 10px;
+	height: 159px;
+	width: 342px;
+	border: 2px solid #DDDDDD;
+	background: #FFF;
+	position:relative;
+}
+
+.login h1 {
+
+
+}
+
+.login h2 {
+	display: block;
+	margin:0 0 12px 0;
+	font-size:small;
+}
+
+.login table
+{
+	width:100%;
+	border-collapse: separate;
+	border-spacing: 3px;
+}
+
+#login
+{
+	margin:auto;
+	width:224px;
+	display:block;
+}
+
+#esqueceu_senha
+{
+	width:200px;
+}
+
+#esqueceu_senha table
+{
+	width:100%;
+	border-collapse: separate;
+	border-spacing: 3px;
+}
+/* ------------------------------ FIM LOGIN ------------------------------ */
