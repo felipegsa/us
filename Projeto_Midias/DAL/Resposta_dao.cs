@@ -15,7 +15,7 @@ namespace DAL
         public int salvar(Resposta nova_resposta)
         {
             int novo_id = 0;
-            string comandoSql = "SELECT inserir_resposta(@DS_RESPOSTA, @FL_CORRETA, @ID_QUESTAO)";
+            string comandoSql = "SELECT inserir_resposta(@DS_RESPOSTA, @ID_QUESTAO, @FL_CORRETA)";
             try
             {
                 using (NpgsqlConnection conexao = ConnectionFactory.createConnection())
