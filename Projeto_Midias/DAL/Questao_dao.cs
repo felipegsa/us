@@ -8,7 +8,7 @@ using NpgsqlTypes;
 
 namespace DAL
 {
-    class Questao_dao
+    public class Questao_dao
     {
         public Questao_dao() { }
 
@@ -170,7 +170,7 @@ namespace DAL
             return linha_afetadas;
         }
 
-        public int alterarDescricao(int id_questao, int id_curso)
+        public int alterarCurso(int id_questao, int id_curso)
         {
             int linha_afetadas = 0;
             string comandoSql = "UPDATE QUESTAO SET ID_CURSO = @ID_CURSO WHERE ID_QUESTAO = @ID_QUESTAO;";

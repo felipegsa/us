@@ -51,6 +51,7 @@
     <Compile Include="CURSOBLL.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questao_BLL.cs" />
     <Compile Include="Usuario_BLL.cs" />
   </ItemGroup>
   <ItemGroup>
