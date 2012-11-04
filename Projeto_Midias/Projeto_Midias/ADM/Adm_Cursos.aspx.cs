@@ -100,7 +100,7 @@ namespace Projeto_Midias.ADM
             lstCurso.Duracao_curso = (this.txtDuracao.Text != "" ? this.txtDuracao.Text : null);
             
             // grava o novo curso e retorna seu ID_CURSO
-            //objBLL.salvar(novo_curso);
+            objBLL.salvar(lstCurso);
 
             this.ClientScript.RegisterStartupScript(this.GetType(), "show", "<script>alert('Por favor preencha todos os campos.');</script>");
         }

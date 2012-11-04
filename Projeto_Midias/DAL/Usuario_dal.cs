@@ -27,6 +27,7 @@ namespace DAL
                     NpgsqlParameter[] parametros = new NpgsqlParameter[5];
 
                     // tipo de usuário
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_TIPO_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
 
@@ -42,6 +43,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[0]);
 
                     // nome
+                    parametros[1] = new NpgsqlParameter();
                     parametros[1].ParameterName = "@NM_USUARIO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -56,6 +58,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[1]);
 
                     // email
+                    parametros[2] = new NpgsqlParameter();
                     parametros[2].ParameterName = "@EMAIL_USUARIO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -70,6 +73,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[2]);
 
                     // senha
+                    parametros[3] = new NpgsqlParameter();
                     parametros[3].ParameterName = "@SENHA_USUARIO";
                     parametros[3].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -84,6 +88,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[3]);
 
                     // link da imagem
+                    parametros[4] = new NpgsqlParameter();
                     parametros[4].ParameterName = "@LINK_IMAGEM_USUARIO";
                     parametros[4].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -157,6 +162,7 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[0].Value = id_usuario;
@@ -192,6 +198,7 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@EMAIL_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
                     parametros[0].Value = email_usuario;
@@ -228,11 +235,13 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[2];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@EMAIL_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
                     parametros[0].Value = email_usuario;
                     cmd.Parameters.Add(parametros[0]);
 
+                    parametros[1] = new NpgsqlParameter();
                     parametros[1].ParameterName = "@SENHA_USUARIO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
                     parametros[1].Value = senha;
@@ -271,6 +280,7 @@ namespace DAL
                     NpgsqlParameter[] parametros = new NpgsqlParameter[6];
 
                     // tipo de usuário
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_TIPO_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
 
@@ -286,6 +296,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[0]);
 
                     // nome
+                    parametros[1] = new NpgsqlParameter();
                     parametros[1].ParameterName = "@NM_USUARIO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -300,6 +311,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[1]);
 
                     // email
+                    parametros[2] = new NpgsqlParameter();
                     parametros[2].ParameterName = "@EMAIL_USUARIO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -314,6 +326,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[2]);
 
                     // senha
+                    parametros[3] = new NpgsqlParameter();
                     parametros[3].ParameterName = "@SENHA_USUARIO";
                     parametros[3].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -328,6 +341,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[3]);
 
                     // link da imagem
+                    parametros[4] = new NpgsqlParameter();
                     parametros[4].ParameterName = "@LINK_IMAGEM_USUARIO";
                     parametros[4].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -342,6 +356,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[4]);
 
                     // ID_USUARIO
+                    parametros[5] = new NpgsqlParameter();
                     parametros[5].ParameterName = "@ID_USUARIO";
                     parametros[5].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[5].Value = usuario.Id_usuario;
@@ -376,6 +391,7 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[0].Value = id_usuario;

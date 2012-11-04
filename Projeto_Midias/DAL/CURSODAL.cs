@@ -119,6 +119,7 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[0].Value = id_usuario.Id_usuario;
@@ -152,6 +153,7 @@ namespace DAL
                 {
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql,conn);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
+
                     parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
@@ -188,6 +190,7 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_CURSO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[0].Value = id_curso;
@@ -224,6 +227,7 @@ namespace DAL
                     NpgsqlParameter[] parametros = new NpgsqlParameter[6];
 
                     // título
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@TL_CURSO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -238,6 +242,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[0]);
 
                     // descrição
+                    parametros[1] = new NpgsqlParameter();
                     parametros[1].ParameterName = "@DS_CURSO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -252,6 +257,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[1]);
 
                     // objetivo
+                    parametros[2] = new NpgsqlParameter();
                     parametros[2].ParameterName = "@OBJ_CURSO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -266,6 +272,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[2]);
 
                     // Tópicos
+                    parametros[3] = new NpgsqlParameter();
                     parametros[3].ParameterName = "@TOPICOS_CURSO";
                     parametros[3].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -280,6 +287,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[3]);
 
                     // Pré-requisitos
+                    parametros[4] = new NpgsqlParameter();
                     parametros[4].ParameterName = "@PRE_REQ_CURSO";
                     parametros[4].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -294,6 +302,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[4]);
 
                     // Duração
+                    parametros[5] = new NpgsqlParameter();
                     parametros[5].ParameterName = "@DURACAO_CURSO";
                     parametros[5].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -340,6 +349,7 @@ namespace DAL
                     NpgsqlParameter[] parametros = new NpgsqlParameter[7];
 
                     // título
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@TL_CURSO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -354,6 +364,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[0]);
 
                     // descrição
+                    parametros[1] = new NpgsqlParameter();
                     parametros[1].ParameterName = "@DS_CURSO";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -368,6 +379,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[1]);
 
                     // objetivo
+                    parametros[2] = new NpgsqlParameter();
                     parametros[2].ParameterName = "@OBJ_CURSO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -382,6 +394,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[2]);
 
                     // Tópicos
+                    parametros[3] = new NpgsqlParameter();
                     parametros[3].ParameterName = "@TOPICOS_CURSO";
                     parametros[3].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -396,6 +409,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[3]);
 
                     // Pré-requisitos
+                    parametros[4] = new NpgsqlParameter();
                     parametros[4].ParameterName = "@PRE_REQ_CURSO";
                     parametros[4].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -410,6 +424,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[4]);
 
                     // Duração
+                    parametros[5] = new NpgsqlParameter();
                     parametros[5].ParameterName = "@DURACAO_CURSO";
                     parametros[5].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -424,6 +439,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[5]);
 
                     // para update id_curso é parâmetro obrigatório
+                    parametros[6] = new NpgsqlParameter();
                     parametros[6].ParameterName = "@ID_CURSO";
                     parametros[6].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[6].Value = curso.Id_curso;
@@ -459,6 +475,7 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[3];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_CURSO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[0].Value = id_curso;

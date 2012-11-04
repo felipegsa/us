@@ -27,6 +27,7 @@ namespace DAL
                     NpgsqlParameter[] parametros = new NpgsqlParameter[4];
 
                     // título
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@TL_AULA";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -42,6 +43,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[0]);
 
                     // descrição
+                    parametros[1] = new NpgsqlParameter();
                     parametros[1].ParameterName = "@DS_AULA";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -56,6 +58,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[1]);
 
                     // curso no qual a aula pertence
+                    parametros[2] = new NpgsqlParameter();
                     parametros[2].ParameterName = "@ID_CURSO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Integer;
 
@@ -70,6 +73,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[2]);
 
                     // link da aula (link onde o vídeo da aula está)
+                    parametros[3] = new NpgsqlParameter();
                     parametros[3].ParameterName = "@LINK_AULA";
                     parametros[3].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -114,6 +118,7 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_AULA";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[0].Value = id_aula;
@@ -180,6 +185,7 @@ namespace DAL
                     NpgsqlCommand cmd = new NpgsqlCommand(comandoSql, conexao);
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_USUARIO";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[0].Value = id_usuario.Id_usuario;
@@ -217,6 +223,7 @@ namespace DAL
                     NpgsqlParameter[] parametros = new NpgsqlParameter[5];
 
                     // título
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@TL_AULA";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -231,6 +238,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[0]);
 
                     // descrição
+                    parametros[1] = new NpgsqlParameter();
                     parametros[1].ParameterName = "@DS_AULA";
                     parametros[1].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -245,6 +253,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[1]);
 
                     // curso
+                    parametros[2] = new NpgsqlParameter();
                     parametros[2].ParameterName = "@ID_CURSO";
                     parametros[2].NpgsqlDbType = NpgsqlDbType.Integer;
 
@@ -259,6 +268,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[2]);
 
                     // link da aula
+                    parametros[3] = new NpgsqlParameter();
                     parametros[3].ParameterName = "@LINK_AULA";
                     parametros[3].NpgsqlDbType = NpgsqlDbType.Varchar;
 
@@ -273,6 +283,7 @@ namespace DAL
                     cmd.Parameters.Add(parametros[3]);
 
                     // ID_USUARIO
+                    parametros[4] = new NpgsqlParameter();
                     parametros[4].ParameterName = "@ID_AULA";
                     parametros[4].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[4].Value = aula.Id_aula;
@@ -306,6 +317,7 @@ namespace DAL
                     NpgsqlParameter[] parametros = new NpgsqlParameter[1];
 
                     // título
+                    parametros[0] = new NpgsqlParameter();
                     parametros[0].ParameterName = "@ID_AULA";
                     parametros[0].NpgsqlDbType = NpgsqlDbType.Integer;
                     parametros[0].Value = id_aula;
