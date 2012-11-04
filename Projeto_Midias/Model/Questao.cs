@@ -7,7 +7,7 @@ namespace Model
 {
     public class Questao
     {
-        public int ID_questao { get; set; }
+        public int Id_questao { get; set; }
         public string Ds_questao { get; set; }
         public Curso Curso_obj { get; set; }
         public DateTime Dt_cadastro { get; set; }
